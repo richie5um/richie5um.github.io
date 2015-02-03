@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[RichSomerfield.com]]></title>
+  <link href="http://richsomerfield.com/atom.xml" rel="self"/>
+  <link href="http://richsomerfield.com/"/>
+  <updated>2014-09-08T10:02:00-07:00</updated>
+  <id>http://richsomerfield.com/</id>
+  <author>
+    <name><![CDATA[Rich Somerfield]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[WWDC Speculation - 2014]]></title>
+    <link href="http://richsomerfield.com/blog/2014/05/30/wwdc-speculation-2014/"/>
+    <updated>2014-05-30T12:34:41-07:00</updated>
+    <id>http://richsomerfield.com/blog/2014/05/30/wwdc-speculation-2014</id>
+    <content type="html"><![CDATA[<blockquote><p>As per the title, this isn&rsquo;t necessarily intended as a prediction of what will happen, but, it is speculation on what could happen.</p></blockquote>
+
+<h1>Background</h1>
+
+<p>I think Microsoft is on to something with the Surface Pro. I think the idea of a combined, &lsquo;laptop and tablet&rsquo; hardware device is good. It is the execution that has caused them issues.</p>
+
+<p>The main problem (IMO) they&rsquo;ve encountered is that due to a lack of completed touch apps, the user is almost always forced into the laptop experience &ndash; which is horrible when all you have is a finger.</p>
+
+<h1>The &lsquo;Tabtop&rsquo;</h1>
+
+<p>Putting a few pieces together:</p>
+
+<ul>
+<li>Hardware
+
+<ul>
+<li>A bluetooth keyboard (possibly with integrated touchpad)</li>
+<li>A touchpad / mouse</li>
+<li>An iPad-like toucbable device (12&#8221; ?!)</li>
+<li>A <a href="http://www.instructables.com/id/DIY-wooden-5-iPad-Dock-Stand/" title="Dock">Dock</a></li>
+<li>A inductive charging mat (to avoid plugging things in)</li>
+</ul>
+</li>
+<li>Software
+
+<ul>
+<li>File Sync technology &ndash; that insulates the user from the actual local storage location (e.g. iCloud)</li>
+<li>Quality apps for both touch and laptop experiences, that use the same file formats (e.g. Pages, Numbers, Keynote)</li>
+<li>Laptop operating system (OS X)</li>
+<li>Touch operating system (iOS)</li>
+</ul>
+</li>
+</ul>
+
+
+<p>There are definitely a details to work out:</p>
+
+<ul>
+<li>What happens when you &lsquo;undock&rsquo; the screen?</li>
+<li>What about the network hungry laptop apps?</li>
+<li>Can you run OS X efficiently on an <a href="http://www.anandtech.com/show/7910/apples-cyclone-microarchitecture-detailed" title="ARM chip">ArmChip</a>?</li>
+<li>What about additional connectors (display / USB)?</li>
+</ul>
+
+
+<br><br>
+
+
+<p>Maybe, just maybe, Apple has all of the pieces already.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[mitmproxy - updating]]></title>
+    <link href="http://richsomerfield.com/blog/2014/05/20/mitmproxy-updating/"/>
+    <updated>2014-05-20T20:55:35-07:00</updated>
+    <id>http://richsomerfield.com/blog/2014/05/20/mitmproxy-updating</id>
+    <content type="html"><![CDATA[<p>After a rather annoying hour, I&rsquo;ve managed to update my copy of mitmproxy to the latest. I&rsquo;d previously used pip to install it, but, that was failing to get the latest version (including concurrent requests).</p>
+
+<p>In the end, I reverted to the manual approach of:</p>
+
+<ul>
+<li><code>git clone https://github.com/mitmproxy/mitmproxy.git</code>
+
+<ul>
+<li><code>sudo python setup.py install</code></li>
+</ul>
+</li>
+<li><code>git clone https://github.com/mitmproxy/netlib</code>
+
+<ul>
+<li><code>sudo python setup.py install</code></li>
+</ul>
+</li>
+<li><code>git clone https://github.com/pyca/pyopenssl</code>
+
+<ul>
+<li><code>sudo python setup.py install</code></li>
+</ul>
+</li>
+</ul>
+
+
+<p>:&ndash;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using Splunk to monitor OS X File Access]]></title>
+    <link href="http://richsomerfield.com/blog/2014/04/22/using-splunk-to-monitor-os-x-file-access/"/>
+    <updated>2014-04-22T06:56:10-07:00</updated>
+    <id>http://richsomerfield.com/blog/2014/04/22/using-splunk-to-monitor-os-x-file-access</id>
+    <content type="html"><![CDATA[<blockquote><p>Contact me <a href="https://www.twitter.com/@richie5um">@richie5um</a></p></blockquote>
+
+<h2>Introduction</h2>
+
+<p>This guide shows you how you can use DTrace (OpenSnoop) and Splunk to quickly and easily view what processes are opening files on your Mac.</p>
+
+<p>OpenSnoop is a great tool, but, it can be very noisy and therefore slightly annoying to use effectively &ndash; apart from basic <code>grep</code>ing.
+Splunk is a superb system for quickly and dynamically investigating event data.</p>
+
+<p>By combining the two, we get an incredible amount of detail which is very easy to navigate through.</p>
+
+<h2>Details</h2>
+
+<p>OpenSnoop is a shell script that uses DTrace to log <em>file opens</em> in space separated columns. We are going to amend the shell script so that the output is in key/value form &ndash; as this makes it much easy to parse with other tools (e.g. Splunk).</p>
+
+<p>With our ammended shell script, we&rsquo;ll then get Splunk to import the data.</p>
+
+<h2>How To</h2>
+
+<ul>
+<li>Download and install Splunk (you can use the free license, which is capped, but, should be usable).
+
+<ul>
+<li>There may be a suitable free alternative, but, I&rsquo;ve not looked.</li>
+</ul>
+</li>
+<li>Download <a href="https://gist.github.com/richie5um/11188662">OpenSnoopKV.sh</a>
+
+<ul>
+<li>This adds the <code>-k</code> parameter which outputs the data in Key/Value format. This was a quick hacky adjustment, there is likely a cleaner way of changing OpenSnoop than lots of <code>if</code>&rsquo;s.</li>
+<li>Note: Your system default OpenSnoop is in <code>/usr/bin/opensnoop.sh</code></li>
+</ul>
+</li>
+<li>Run OpenSnoopKV.sh (DTrace will need to be elevated) so that it outputs to a file
+
+<ul>
+<li><code>sudo ./OpenSnoopKV.sh -k -v -A &gt; /tmp/opensnoopkv.txt</code></li>
+</ul>
+</li>
+<li>Configure Splunk to import from OpenSnoop output.
+
+<ul>
+<li>Step 1 &ndash; Add a data input:
+
+<ul>
+<li><a href="images/OpensnoopSplunk/1-AddDataInput.png" class="fancybox" title=""><img class="no-border" src="http://richsomerfield.com/images/thumbs/1-AddDataInput_100x100^.png" alt="" /></a></li>
+</ul>
+</li>
+<li>Step 2 &ndash; Add the file input:
+
+<ul>
+<li><a href="images/OpensnoopSplunk/2-AddFileInput.png" class="fancybox" title=""><img class="no-border" src="http://richsomerfield.com/images/thumbs/2-AddFileInput_100x100^.png" alt="" /></a></li>
+</ul>
+</li>
+<li>Step 3 &ndash; Configure the input file:
+
+<ul>
+<li><a href="images/OpensnoopSplunk/3-ConfigureInputFile.png" class="fancybox" title=""><img class="no-border" src="http://richsomerfield.com/images/thumbs/3-ConfigureInputFile_100x100^.png" alt="" /></a></li>
+</ul>
+</li>
+<li>Step 4 &ndash; Setup the source type:
+
+<ul>
+<li><a href="images/OpensnoopSplunk/4-SourceType.png" class="fancybox" title=""><img class="no-border" src="http://richsomerfield.com/images/thumbs/4-SourceType_100x100^.png" alt="" /></a></li>
+</ul>
+</li>
+<li>Step 5 &ndash; Verify the format is detected:
+
+<ul>
+<li><a href="images/OpensnoopSplunk/5-VerifyFormatDetected.png" class="fancybox" title=""><img class="no-border" src="http://richsomerfield.com/images/thumbs/5-VerifyFormatDetected_100x100^.png" alt="" /></a></li>
+</ul>
+</li>
+<li>Step 6 &ndash; Specify the source type:
+
+<ul>
+<li><a href="images/OpensnoopSplunk/6-SpecifySourceType.png" class="fancybox" title=""><img class="no-border" src="http://richsomerfield.com/images/thumbs/6-SpecifySourceType_100x100^.png" alt="" /></a></li>
+</ul>
+</li>
+<li>Step 7 &ndash; Enjoy, and start searching in Splunk:
+
+<ul>
+<li><a href="images/OpensnoopSplunk/7-Enjoy.png" class="fancybox" title=""><img class="no-border" src="http://richsomerfield.com/images/thumbs/7-Enjoy_100x100^.png" alt="" /></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Additional</h2>
+
+<ul>
+<li>OpenSnoop can also monitor a specific file. This will help you reduce the volume of events. For example:
+
+<ul>
+<li><code>sudo ./OpenSnoopKV.sh -k -v -A -f ~/File.txt &gt; /tmp/opensnoopkv.txt</code></li>
+<li>Note: I&rsquo;d ideally like to add a path prefix match to filter to only log paths under that parent folder. I&rsquo;ll look at a mod to OpenSnoop at some point.</li>
+</ul>
+</li>
+<li>If you want to clean all the data from Splunk, or, want to perform Splunk operations then you&rsquo;ll need to run the cmd line tools, for example, to delete <strong>all</strong> Splunk data:
+
+<ul>
+<li>Start Terminal.app</li>
+<li><code>cd /Applications/Splunk/bin</code></li>
+<li><code>./splunk stop</code></li>
+<li><code>./splunk clean eventdata</code></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Disclaimers</h2>
+
+<ul>
+<li>Given there are a lot of file events, it may be better to send directly via UDP &ndash; rather than using a file &ndash; as the file will get very big very quickly.
+
+<ul>
+<li>Also, if you leave this running it is likely that you&rsquo;ll hit the Splunk cap pretty quickly.</li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RegExp - Doesn't Start With...]]></title>
+    <link href="http://richsomerfield.com/blog/2014/03/13/regexp-doesnt-start-with/"/>
+    <updated>2014-03-13T21:32:21-07:00</updated>
+    <id>http://richsomerfield.com/blog/2014/03/13/regexp-doesnt-start-with</id>
+    <content type="html"><![CDATA[<p><em>Hopefully this&rsquo;ll remind me how to do it rather than wasting another 20 mins!</em></p>
+
+<p>To use a regular expression to only match a string, if it in not preceeded by a certain string, you can use a <em>negative lookbehind assertion</em>.</p>
+
+<p>Given an input set of:</p>
+
+<ul>
+<li>Object</li>
+<li>RSObject</li>
+<li>NSObject</li>
+<li>Test RSObject</li>
+</ul>
+
+
+<p>We want to find <strong>Object</strong> only if it isn&rsquo;t preceeded by <strong>RS</strong>.</p>
+
+<h3>Solution:</h3>
+
+
+<pre><code>(?&lt;!RS)Object
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Adventures in Git - SparseCheckouts]]></title>
+    <link href="http://richsomerfield.com/blog/2014/03/05/adventures-in-git-sparsecheckouts/"/>
+    <updated>2014-03-05T20:39:23-08:00</updated>
+    <id>http://richsomerfield.com/blog/2014/03/05/adventures-in-git-sparsecheckouts</id>
+    <content type="html"><![CDATA[<h2>What are Sparse Checkouts?</h2>
+
+<p>If you have a git repo that you have cloned to your local machine, but, there are certain files/folders that you don&rsquo;t want to see &ndash; but, you don&rsquo;t want to remove them from the repo &ndash; you can use sparse checkouts.</p>
+
+<p>Sparse Checkouts have to be explicity enabled for each repo. And, after using them for the first time today, there seem to be some quirks that I can hopefully help you from experiencing.</p>
+
+<p>I&rsquo;m using a Mac 10.9.2, with Git Version: 1.8.3.4 (Apple Git-47).</p>
+
+<h2>How To use Sparse Checkouts?</h2>
+
+<h4>Enable:</h4>
+
+<p>First you need to enable them for your repo. In your repo use:</p>
+
+<pre><code>git config core.sparseCheckout true
+</code></pre>
+
+<p>Next, you need to set up your includes/excludes &ndash; each entry is on a separate line in a file called &lsquo;.git/info/sparse-checkouts&rsquo;. For includes, you can use wildcard or specify the specific file/folder. For excludes, you do the same but start with a &lsquo;!&rsquo;. Unfortunately, there seem to be some quirks with this, especially with folder <em>excludes</em>. After a lot of trial and error, I came up with the following.</p>
+
+<pre><code>cd $GIT_DIR
+echo "/*" &gt; .git/info/sparse-checkout
+echo "!server/" &gt;&gt; .git/info/sparse-checkout
+git read-tree -mu HEAD
+</code></pre>
+
+<p>This will includes all files/folder in the root, except for the &lsquo;server&rsquo; folder which is hidden.</p>
+
+<h4>SubModules:</h4>
+
+<p>You can also do this for submodules, the difference being that you need to specify those in a different sparse-checkout file (one for each submodule):</p>
+
+<pre><code>cd $GIT_DIR
+echo "/*" &gt; .git/modules/&lt;MODULEPATH&gt;/info/sparse-checkout
+echo "!server/" &gt;&gt; .git/modules/&lt;MODULEPATH&gt;/info/sparse-checkout
+git read-tree -mu HEAD
+</code></pre>
+
+<h4>Disable:</h4>
+
+<p>First you have to remove any sparse-checkout settings, then, you can disable them.</p>
+
+<pre><code>echo "/*" &gt; .git/info/sparse-checkout
+echo "/*" &gt; .git/modules/&lt;MODULEPATH&gt;/info/sparse-checkout  
+git read-tree -mu HEAD
+git config core.sparseCheckout false
+</code></pre>
+
+<p>Hope this helps.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Mac App - TextBar]]></title>
+    <link href="http://richsomerfield.com/blog/2014/02/20/new-mac-app-textbar/"/>
+    <updated>2014-02-20T14:32:54-08:00</updated>
+    <id>http://richsomerfield.com/blog/2014/02/20/new-mac-app-textbar</id>
+    <content type="html"><![CDATA[<blockquote><p>TextBar is a tiny but powerful app that lets you add any text to your MenuBar.</p></blockquote>
+
+<ul class="gallery">
+<div class="item"><a href="http://richsomerfield.com/images/photos/TextBar1.png" class="fancybox" rel="gallery-fa9fc358b79a346f93277fb48b78994f" title="TextBar for Mac"><img class="no-border" src="http://richsomerfield.com/images/thumbs/TextBar1_100x100^.png" alt="TextBar for Mac" /></a></div>
+<div class="item"><a href="http://richsomerfield.com/images/photos/TextBar2.png" class="fancybox" rel="gallery-fa9fc358b79a346f93277fb48b78994f" title="TextBar for Mac"><img class="no-border" src="http://richsomerfield.com/images/thumbs/TextBar2_100x100^.png" alt="TextBar for Mac" /></a></div>
+<div class="item"><a href="http://richsomerfield.com/images/photos/TextBar3.png" class="fancybox" rel="gallery-fa9fc358b79a346f93277fb48b78994f" title="TextBar for Mac"><img class="no-border" src="http://richsomerfield.com/images/thumbs/TextBar3_100x100^.png" alt="TextBar for Mac" /></a></div>
+</ul>
+
+
+
+
+<p><p><p><p></p>
+
+<p><a href="http://richsomerfield.com/apps/" class="btn btn-primary" role="button">More info</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Mac and Me - Filing #3]]></title>
+    <link href="http://richsomerfield.com/blog/2012/11/30/my-mac-and-me-filing-3/"/>
+    <updated>2012-11-30T12:00:00-08:00</updated>
+    <id>http://richsomerfield.com/blog/2012/11/30/my-mac-and-me-filing-3</id>
+    <content type="html"><![CDATA[<h3>Introduction</h3>
+
+<p>After a month of using my <a href="http://www.noodlesoft.com/hazel.php">Hazel</a>-based filing system, I&rsquo;ve made a minor improvement that has had a big benefit.</p>
+
+<p>Whilst the automated clean-up mechanism mentioned in <a href="http://blog.richsomerfield.com/?p=198">My Mac and Me &ndash; Filing #1</a> has been very useful, one problem is that it takes a day for content to be tidyied up. Sometimes, there is a file on the Desktop that you want to be tidyied up immediately.</p>
+
+<h3>Solution</h3>
+
+<p>The solution is pretty simple.</p>
+
+<p>I&rsquo;ve added a new rule to the Desktop folder in Hazel. This new rule is triggered when the color label for a file is set to red. When Hazel detects this, it removes the color label, and moves it immediately to my Notes folder &ndash; which then triggers the filing system described in <a href="http://blog.richsomerfield.com/?p=201">My Mac and Me &ndash; Filing #2</a>.<figure></p>
+
+<p><img src="images/posts/MyMacAndMeFiling3/DesktopCleanup.png" alt="" /></figure></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Mac and Me - Filing #2]]></title>
+    <link href="http://richsomerfield.com/blog/2012/11/05/my-mac-and-me-filing-2/"/>
+    <updated>2012-11-05T12:00:00-08:00</updated>
+    <id>http://richsomerfield.com/blog/2012/11/05/my-mac-and-me-filing-2</id>
+    <content type="html"><![CDATA[<h3>Introduction</h3>
+
+<p>So far we’ve looked at how to automatically organise the Desktop folder by moving <em>old and unpinned</em> files to a separate <strong>Notes</strong> folder. The next stage is to automatically organise the <strong>Notes</strong> folder.</p>
+
+<h3>Notes</h3>
+
+<p>I generate two types of content:</p>
+
+<ul>
+<li>General information/notes.</li>
+<li>Project specific information/notes.</li>
+</ul>
+
+
+<p>The former suits a filing system based on <em>Year + Month</em>. The latter suits a filing system based on project specific buckets.</p>
+
+<h3>Solution</h3>
+
+<p>Once again, <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> to the rescue &ndash; I really need to get a referer link <img src='http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> .</p>
+
+<p>First step is to tell Hazel to monitor the <em>Notes</em> folder:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/NotesFolder.png" alt="" /></p>
+
+<p>After that we create our rules for that folder:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/Rules.png" alt="" /></p>
+
+<p>As per my description in the <a href="#notes">Notes</a> section, there are two different types of rules here:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/RuleTypes.png" alt="" /></p>
+
+<p>The ones I’ve marked as <em>green</em> are the project specific ones. As Hazel runs the rules from top to bottom, these get matched first. The one I’ve marked as <em>orange</em> is for the general notes.</p>
+
+<h3>Solution &ndash; Project Specific Rules</h3>
+
+<p>For the project specific rules, I (currently) rely on a string match against the file/folder name. There is probably a more elegant mechanism, but, for now, this keeps things simple.</p>
+
+<p>The configuration for the project specific rules are pretty simple:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/ExampleRule.png" alt="" /></p>
+
+<p>Here we are looking for a piece of text in the name, and if found, we move that to the project specific folder.</p>
+
+<h3>Solution &ndash; Date Sorting Rule</h3>
+
+<p>For the general rule, we use the information from the file/folders creation date to file it into Year/Month sub-folders, so in Finder it ultimately looks like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/NotesFolderFinder.png" alt="" /></p>
+
+<p>The logic for the sorting is pretty simple:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/DateSortRule.png" alt="" /></p>
+
+<p>We ignore anything that starts with ’20’ &ndash; this a bit of a hack to prevent the year folders from being analysed. <a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><a href="http://www.noodlesoft.com/hazel.php">1</a></a>.</p>
+
+<p>Then we create a ‘Sort into subfolder’ action. You can use any format you like, but I prefer the <em><Year> / <MonthNumber>. <MonthName></em> format, for example ‘2012 / 09. September’. This gives you correct alphabetical sorting, but maintains readability.</p>
+
+<p>To create that format you need to define the pattern like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/DateFolderFormat.png" alt="" /></p>
+
+<p>The <strong>Year</strong> <em>date created</em> part is built like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/DateCreated.png" alt="" /></p>
+
+<p>The arrow divider is a folder separator &ndash; so the month is a sub-folder of the year.</p>
+
+<p>The <strong>Month</strong> <em>date created</em> part is built like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/MonthCreated.png" alt="" /></p>
+
+<p>And the example in Hazel should look like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/ExampleDateFolder.png" alt="" /></p>
+
+<h3>Done</h3>
+
+<p>With this rule set, and the Desktop rule set we’ve now got three different ways of filing our files:</p>
+
+<ul>
+<li>Leave on the Desktop to be automatically organised.</li>
+<li>Move directly to the Notes folder to immediately initate automated organisation.</li>
+<li>Manually move directly to the target folder.</li>
+</ul>
+
+
+<h3>Future</h3>
+
+<p>Ideally I want to get used to creating MultiMarkdown tags, and using these to help with automated filing. But for now, the above approach is working well.</p>
+
+<p>In the next post, we’ll tie our filing system to a task management system.</p>
+
+<p>Hope you found this useful, I’m definitely interested in your feedback.</p>
+
+<pre><code>I did think of using a Color Label for those, but that they complicates other things. You can use any mechanism you think best for this bit. For me, I just have to remember not to start any of my notes with ’20’. &lt;a href="#fnref:1" title="return to article" class="reversefootnote"&gt;&amp;#160;&amp;#8617;&lt;/a&gt;
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Mac and Me - Filing #1]]></title>
+    <link href="http://richsomerfield.com/blog/2012/10/04/my-mac-and-me-filing-1/"/>
+    <updated>2012-10-04T13:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2012/10/04/my-mac-and-me-filing-1</id>
+    <content type="html"><![CDATA[<h3>Introduction</h3>
+
+<p>How you organise files, and how you keep then organised, is a pretty much universal problem. Thanks to <a href="http://www.noodlesoft.com/hazel.php">Hazel</a>, I’ve got an automated mechanism (default) and a manual mechanism (override). In this post I&rsquo;ll describe the first stage of my current automated mechanism.</p>
+
+<h3>The Desk(top)</h3>
+
+<p>The desktop is a great place to put things; quick access and easy visibility. It is fine for it to be a permant place for some things, but the problem is that for the majority of items it <em>should</em> be temporary, otherwise it easily gets cluttered and productivity suffers.</p>
+
+<p>I keep a small number of things on my desktop; things that I need quick access to, and, importantly, that I am actively working on. For everything else, I got into the habit of manually filing things away into folders &ndash; the problem with this though is that it can be time consuming, hence looking for an automated system.</p>
+
+<h3>Vision</h3>
+
+<p>In trying to automatically manage my desktop, I need two capabilities:</p>
+
+<ol>
+<li>Ability to <strong>pin</strong> items to the desktop &ndash; so they are permanatly left their (until <strong>unpinned</strong>).</li>
+<li>Automatic mechanism for moving files/folders into an organised structure (i.e. off my desktop).
+
+<ul>
+<li>Not instantly, but allowing them to reside there for a short period of time.</li>
+</ul>
+</li>
+</ol>
+
+
+<h3>Solution</h3>
+
+<p><a href="http://www.noodlesoft.com/hazel.php">Hazel</a> to the rescue.</p>
+
+<p>The first action is to monitor the <strong>Desktop</strong> folder, and create a <strong>Clean Up</strong> rule:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling1/DesktopMain.png" alt="Hazel: Desktop Folder" /></p>
+
+<p>The <strong>Clean Up</strong> rule monitors the Desktop folder, and anything not pinned (no Color Label), that is older than today, gets automatically moved to the <strong>Notes</strong> folder:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling1/DesktopCleanUpRule.png" alt="Hazel: Clean Up Rule" /></p>
+
+<p>I also keep an alias to the Notes folder directly on my desktop, so that I can easily move things there without having to wait for the clean-up routine:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling1/NotesAlias.png" alt="" /></p>
+
+<p>That is it for this post, but stay tuned for the next in the series where we make this filing system even more useful.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Mac and Me]]></title>
+    <link href="http://richsomerfield.com/blog/2012/09/26/my-mac-and-me/"/>
+    <updated>2012-09-26T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2012/09/26/my-mac-and-me</id>
+    <content type="html"><![CDATA[<h3>Introduction</h3>
+
+<p>This will be a bit of a brain dump, but I wanted to set the scene on how I’m using my Mac, so that I can follow up with some more interesting posts.</p>
+
+<h3>Plain Text</h3>
+
+<p>I’m a big <strong>plain text</strong> geek &ndash; I write pretty much everything in a plain text editor (Notes / Emails / Documents / Ideas / SourceCodeScratchPad).</p>
+
+<p>Why? There a number of reasons:</p>
+
+<ul>
+<li>I’ve wasted far too many hours of my life trying to get bullet points (amongst other things) to line up correctly in MS Word. I’m sure it is all my fault, but it doesn&rsquo;t stop it from happening. And it is always annoying!</li>
+<li>With switching quickly between Win, Mac, iOS and Web, there really is only one format that you know you can always rely on using: plain text.</li>
+<li>I’ve always liked the idea of separating the content, from the presentation. It’s is how we write well architected code, so there is no reason why it shouldn&rsquo;t apply to documents / notes.</li>
+<li>What file format can you interact with using scripts and other tools.</li>
+<li>In 10 years time, what is the likelihood that all of the current complex file formats are still going to be readable? Plain text will almost certainly still be usable.</li>
+</ul>
+
+
+<p>I’m currently using a few different text editors; <a href="http://bywordapp.com/">Byword (Mac+iOS)</a>, <a href="http://www.sublimetext.com/2">Sublime Text 2 (Mac)</a>, <a href="http://www.textasticapp.com/">Textastic (iOS)</a>, <a href="http://writeup.prasannag.com/">WriteUp (iOS)</a>, and <a href="http://www.iawriter.com/">iA Writer (iOS)</a>. They all work slightly differently, and I keep changing my mind on which I prefer to use, but the beauty of writing everything in <strong>plain text</strong> is that it really doesn&rsquo;t matter what app I use <img src='http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> .</p>
+
+<h3>Content + Markup</h3>
+
+<p>In theory, HTML+CSS already gives a very flexible (and plain text based) mechanism for creating content. The problem is that it is a pain to directly write HTML from scratch &ndash; especially when you are using a smartphone text editor. Added to that is the fact that it isn&rsquo;t particularly readable as raw HTML, you really have to present it to be able to easily read the content.</p>
+
+<p>The solution I use is <a href="http://www.daringfireball.com/markdown">Markdown</a> <a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><a href="http://bywordapp.com/">1</a></a>. It has been around for a long time, but seems (at least to me) to have really taken off in usage over the past few years. I’m sure a big part of this is related to the increase in the number of devices that people are exposed to, and the lack of support on them all for the complex file formats.</p>
+
+<h3>File Organization</h3>
+
+<p>I recently took the plunge and bought <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> for Mac. Before I bought it, I’d been thinking that because it seemed such a simple app, I could do everything it did myself. After buying it, I’ve realized that the previous sentence is still true, but the difference is that I can forget about all the plumbing bits, and focus on creating some interesting mashups. It is a cool app, and I’ve only really scratched the surface.</p>
+
+<h3>Tasks Management</h3>
+
+<p>I’ve been using <a href="http://www.omnigroup.com/products/omnifocus/">OmniFocus</a> for my task management for quite a while now. I’m still not as efficient as I should be, but it has definitely improved since I started using it.</p>
+
+<h3>End</h3>
+
+<p>So, that is a bit of a background, my next post will describe how I’ve been using some of these tools to improve productivity.</p>
+
+<pre><code>Technically, I’m mainly using the [MultiMarkdown][9] syntax. &lt;a href="#fnref:1" title="return to article" class="reversefootnote"&gt;&amp;#160;&amp;#8617;&lt;/a&gt;
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Problem with Persisted iOS Simulator Credentials]]></title>
+    <link href="http://richsomerfield.com/blog/2012/08/28/problem-with-persisted-ios-simulator-credentials/"/>
+    <updated>2012-08-28T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2012/08/28/problem-with-persisted-ios-simulator-credentials</id>
+    <content type="html"><![CDATA[<p>If, like me, you <em>accidentally</em> use NSURLCredentialPersistencePermanent, like below, and run it on the iOS Simulator the credentials will be stored permantly &ndash; as you might imagine. The problem is that there is no (as far as I could find) obvious way to get rid of those permantly stored credentials.</p>
+
+<pre><code>    -(void)connection:(NSURLConnection *)connection 
+      didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge*)challenge {
+
+        if([challenge previousFailureCount] == 0) {
+
+            NSURLCredential *newCredential = [NSURLCredential 
+                credentialWithUser:self.username 
+                          password:self.password
+                       persistence:NSURLCredentialPersistencePermanent];
+            [[challenge sender] useCredential:newCredential 
+                   forAuthenticationChallenge:challenge];
+        } else {
+            [[challenge sender] cancelAuthenticationChallenge:challenge];
+        }
+    }
+</code></pre>
+
+<h3>Solution</h3>
+
+<p>The simple solution to removing those store credentials is to manually delete the KeyChain DB file from your machine. As of 28th August 2012, the KeyChain file is stored in: ~/Library/Application Support/iPhone Simulator/5.1/Library/Keychains</p>
+
+<p>I deleted the file: <em>keychain-2-debug.db</em>, but yours may be called something different.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OneNoteJournal - Open Sourced]]></title>
+    <link href="http://richsomerfield.com/blog/2012/05/22/onenotejournal-open-sourced/"/>
+    <updated>2012-05-22T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2012/05/22/onenotejournal-open-sourced</id>
+    <content type="html"><![CDATA[<p>In case someone finds it useful, I&rsquo;ve opened sourced my OneNoteJournal code.  Available here:<br/>
+<a href="https://github.com/richie5um/OneNoteJournal">https://github.com/richie5um/OneNoteJournal</a></p>
+
+<p>Hope you like.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Top x Coding Issues]]></title>
+    <link href="http://richsomerfield.com/blog/2012/01/19/top-x-coding-issues/"/>
+    <updated>2012-01-19T00:00:00-08:00</updated>
+    <id>http://richsomerfield.com/blog/2012/01/19/top-x-coding-issues</id>
+    <content type="html"><![CDATA[<p>My experience in Software Engineering has shown me that a certain breed of bugs keeps re-occurring. The following is my list of the biggest (needless) causes of bugs:<br/>
+1. Uninitialized variables.<br/>
+2. Poorly named variables and functions.<br/>
+3. Multiple function exit points (i.e. multiple returns).<br/>
+4. Not checking return codes.<br/>
+5. Not checking before de-referencing.<br/>
+6. Not verifying target buffer lengths before using them.</p>
+
+<p>I&rsquo;ve been involved in numerous discussions about what should be included in a Code Standards Checklist, and in my opinion, this list is pretty much all you need. Anything more and people ignore it anyway.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Fix a Sony Remote - RM-ED035]]></title>
+    <link href="http://richsomerfield.com/blog/2011/09/24/how-to-fix-a-sony-remote-rm-ed035/"/>
+    <updated>2011-09-24T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2011/09/24/how-to-fix-a-sony-remote-rm-ed035</id>
+    <content type="html"><![CDATA[<h1>Problem</h1>
+
+<p>My youngest son (12 months) decided our TV remote would be good to chew on &ndash; he is really rather like a dog at the moment!</p>
+
+<p>He didn&rsquo;t have it for too long, but managed to do enough damage that the remote was repeatedly sending button presses to the TV. <img src='http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_sad.gif' alt=':-(' class='wp-smiley' /></p>
+
+<p>I tried the usual tricks: taking the batteries out and putting them back, using a hairdryer to try and get rid of moisture, and mashing the buttons. Nothing worked.</p>
+
+<p>Next, a quick check on eBay suggested I could get a replacement for £15, so not too bad, but worth me having a go at fixing it.</p>
+
+<p>A search on Google didn&rsquo;t turn up anything useful to help fix it, so after a few experiments, I managed to take it to pieces, and thought I should post here in case anyone else has the same problem and wanted some help.</p>
+
+<h1>How To</h1>
+
+<p>First, you need to get the back cover off. It slides up, so you can replace the batteries, but at this point it isn&rsquo;t obvious how to remove it. There are two ways; you can either use a flat metal blade (I used a table knife, but you may wish to use something safer!) and insert into the seam between the back cover and the main body and then slide it up and down until you pop open the catches, or, the better way, is to half slide up the back cover and you&rsquo;ll notice little grooves that it slots into to help you get it off.</p>
+
+<p>Next, remove the six little screws. Even with these removed, it is still locked together because of internal catches. I couldn&rsquo;t find a simple way to get this off, so had to use the same flat blade trick as before.</p>
+
+<p>After you&rsquo;ve got this apart, you can clean the rubber keys and the contact board, and hopefully this will fix it for you. Then, just put it back together and you are done.</p>
+
+<p>Hope this helps.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rails and MySQL]]></title>
+    <link href="http://richsomerfield.com/blog/2011/06/09/rails-and-mysql/"/>
+    <updated>2011-06-09T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2011/06/09/rails-and-mysql</id>
+    <content type="html"><![CDATA[<p>Jeez, it gets worse.</p>
+
+<p>I finally managed to get things moving my installing RVM and Homebrew. From this I installed Ruby 1.9.2, Rails 3.0.7, and MySQL 0.3.2. Unfortunately, if you use MySQL 0.3.2, you need to use Rails >=3.1. So, I downgraded to MySQL 0.2.7.</p>
+
+<p>Then, I got some annoying MySQL connection error.</p>
+
+<p>Finally, after three evenings of trying to resolve the error, I&rsquo;ve have removed RVM, installed the MySQL2 gem into my system and configured the link to the MySQL lib, and finally, after a reboot, I&rsquo;ve got it working.</p>
+
+<p>Phew. I&rsquo;ve not had this much hassle since I tried to install OpenNAS on my Linux box.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby and Rails and MySQL for Mac (Snow Leopard)]]></title>
+    <link href="http://richsomerfield.com/blog/2011/06/07/ruby-and-rails-and-mysql-for-mac-snow-leopard/"/>
+    <updated>2011-06-07T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2011/06/07/ruby-and-rails-and-mysql-for-mac-snow-leopard</id>
+    <content type="html"><![CDATA[<p>Whilst we are living in Mountain View, we thought we&rsquo;d join the library. It is pretty impressive, and the kids section is bigger than my entire local library in the UK (in fact, my closest UK library has just been shut down due to budget cuts!).</p>
+
+<p>In most of the libraries I&rsquo;ve been to in the UK, they usually have about 3 computer books:<br/>
+* Windows XP for Dummies<br/>
+* How to use an iPod<br/>
+* C++ in 24 Hours</p>
+
+<p>However, the Mountain View library has a few hundred computer books. It is pretty impressive.</p>
+
+<p>Whilst we were there I spotted a few books on Ruby and Rails, given I&rsquo;m interested in learning new things (and have a history of using Python), I thought I&rsquo;d give it a go. I know I&rsquo;m a little late to the party, but I&rsquo;d rather be playing with something like this than watching some rubbish on the TV.</p>
+
+<p>Thankfully, Ruby, Gems, and Rails are all pre-installed on my Mac. Unfortunately though, the book I&rsquo;ve borrowed suggests I use MySQL as the DB, and MySQL isn&rsquo;t preinstalled.</p>
+
+<p>Whilst the installer was pretty simple, getting it to work with Rails has been rather more troublesome. I thought I&rsquo;d post about how I&rsquo;d managed to do it, but I&rsquo;m still not there &ndash; and I&rsquo;ve spent the past 2 hours trying to get it to work. <img src='http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_sad.gif' alt=':-(' class='wp-smiley' /></p>
+
+<p>I guess that is the problem with computer books, they are out of date as soon as they are written. Maybe the UK library model works best <img src='http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> .</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OneNote Journal]]></title>
+    <link href="http://richsomerfield.com/blog/2011/05/23/onenote-journal/"/>
+    <updated>2011-05-23T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2011/05/23/onenote-journal</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been using OneNote for about a year now, and am loving (almost) every minute.  There are a few annoying areas (especially the lack, as far as I can tell, of the picture border tools you get in Word/Outlook/&hellip;), but I use it every day to collect information and help we work through you tasks.</p>
+
+<p>One of the tools that has been recommended to me by my friends is OneNote Journal.  The idea of this is that it can easily create a new day page in OneNote, so that you can keep a daily journal, without having to manually create as page/section/section group with the date.  Unfortunately the tool that they gave me only worked on OneNote 2007, and since I use OneNote 2010, this was no use.</p>
+
+<p>So, about six months ago I created my own OneNote Journal tool, this time for OneNote 2010.  It won&rsquo;t work on an previous version of OneNote, but seems to work fine for OneNote 2010.</p>
+
+<p>The tool sits in your Notification Area (aka System Tray), from which there is a menu to change the date format, and also to create an entry.  As well as this, you can use the Windows+J to create a new entry for today.  If one already exists, then it should automatically bring that page to the foreground.  The tool should automatically create the Year, and Month sections for you &ndash; to keep it nicely organized.</p>
+
+<p><a href="images/posts/2011/05/OneNoteJournal-NotificationTray.png"></a><a href="images/posts/2011/05/OneNoteJournal-Options.png"><img class="aligncenter size-full wp-image-166" title="OneNoteJournal-NotificationTray" src="images/posts/2011/05/OneNoteJournal-NotificationTray.png" alt="" width="280" height="77" /></a></p>
+
+<p><a href="images/posts/2011/05/OneNoteJournal-Options.png"><img class="aligncenter size-full wp-image-167" title="OneNoteJournal-Options" src="images/posts/2011/05/OneNoteJournal-Options.png" alt="" width="298" height="216" /></a></p>
+
+<p><a href="images/posts/2011/05/OneNoteJournal-Organization.png"><img class="aligncenter size-medium wp-image-168" title="OneNoteJournal-Organization" src="images/posts/2011/05/OneNoteJournal-Organization-300x102.png" alt="" width="300" height="102" /></a><br/>
+If you want to download the tool, it is available here:<br/>
+<a href="http://dl.dropbox.com/u/10638488/OneNoteJournal%20v1.2.zip">http://dl.dropbox.com/u/10638488/OneNoteJournal%20v1.2.zip</a></p>
+
+<p>Note: Before you use this, you will need to create a notebook in OneNote called &lsquo;Journal&rsquo;.</p>
+
+<p>Disclaimer: Make sure you backup your OneNote journals before you use this tool.  Whilst I&rsquo;ve not had any problems, it is better to be safe.  And if something does go wrong, I will be unable to help.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Aperture Plugin - Post #2]]></title>
+    <link href="http://richsomerfield.com/blog/2011/05/18/aperture-plugin-post-2/"/>
+    <updated>2011-05-18T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2011/05/18/aperture-plugin-post-2</id>
+    <content type="html"><![CDATA[<p>Ok, so after a fair amount of hassle, I&rsquo;ve determined that it is not possible to create a new Aperture Export Plugin from the template, if, you are using XCode 4.</p>
+
+<p>The &lsquo;trick&rsquo;, if you can call it that, is to use XCode 3 to create the template, and then use XCode 4 from that point onwards.</p>
+
+<p>If you need a new named template creating, let me know and I can create one for you using my XCode 3 instance for you to use in XCode 4.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Aperture Plugin Development]]></title>
+    <link href="http://richsomerfield.com/blog/2011/05/15/aperture-plugin-development/"/>
+    <updated>2011-05-15T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2011/05/15/aperture-plugin-development</id>
+    <content type="html"><![CDATA[<p>Given I&rsquo;ve just bought Aperture 3 (from AppStore), I thought I&rsquo;d have a go a developing an export plugin.</p>
+
+<p>I belong to a photo blog site called www.blipfoto.com, and whilst they have an API, so far nobody has created an Aperture Plugin for it.</p>
+
+<p>So far it hasn&rsquo;t gone too smoothly, so I thought I&rsquo;d create a post in the hope that if someone else has problems, they will find this and it&rsquo;ll help them.</p>
+
+<p>Firstly, download the Aperture 2.1 SDK from Apple.  Then find the plugin examples (&lsquo;/Developer/Examples/Aperture&rsquo;).  When I opened the Export example, and tried to build it, I got the following error:<br/>
+* error: There is no SDK with the name or path &lsquo;/Developer/SDKs/MacOSX10.4u.sdk&rsquo;</p>
+
+<p>A quick check on the web helped me to remove this problem (goto to your build settings, search for &lsquo;10.4&#8242;, and change the build setting to target the latest OS).</p>
+
+<p>Next, you&rsquo;ll probably get another error:<br/>
+* &lsquo;PluginManager/PROAPIAccessing.h&rsquo; no such file or directory.</p>
+
+<p>This is a little bit of a pain to resolve, but basically involves two steps:<br/>
+* Move the old PluginManager folder out of the way<br/>
+* Install PluginManager again (install the FxPluginSDK, which will re-create the PluginManager folder)</p>
+
+<p>Hope this helps &ndash; and I&rsquo;ll let you know how I get on.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Outcome Based Design]]></title>
+    <link href="http://richsomerfield.com/blog/2009/08/14/outcome-based-design/"/>
+    <updated>2009-08-14T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2009/08/14/outcome-based-design</id>
+    <content type="html"><![CDATA[<p>￿</p>
+]]></content>
+  </entry>
+  
+</feed>

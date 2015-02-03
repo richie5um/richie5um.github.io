@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Coding | RichSomerfield.com]]></title>
+  <link href="http://richsomerfield.com/blog/categories/coding/atom.xml" rel="self"/>
+  <link href="http://richsomerfield.com/"/>
+  <updated>2014-09-08T10:02:00-07:00</updated>
+  <id>http://richsomerfield.com/</id>
+  <author>
+    <name><![CDATA[Rich Somerfield]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[OneNoteJournal - Open Sourced]]></title>
+    <link href="http://richsomerfield.com/blog/2012/05/22/onenotejournal-open-sourced/"/>
+    <updated>2012-05-22T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2012/05/22/onenotejournal-open-sourced</id>
+    <content type="html"><![CDATA[<p>In case someone finds it useful, I&rsquo;ve opened sourced my OneNoteJournal code.  Available here:<br/>
+<a href="https://github.com/richie5um/OneNoteJournal">https://github.com/richie5um/OneNoteJournal</a></p>
+
+<p>Hope you like.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby and Rails and MySQL for Mac (Snow Leopard)]]></title>
+    <link href="http://richsomerfield.com/blog/2011/06/07/ruby-and-rails-and-mysql-for-mac-snow-leopard/"/>
+    <updated>2011-06-07T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2011/06/07/ruby-and-rails-and-mysql-for-mac-snow-leopard</id>
+    <content type="html"><![CDATA[<p>Whilst we are living in Mountain View, we thought we&rsquo;d join the library. It is pretty impressive, and the kids section is bigger than my entire local library in the UK (in fact, my closest UK library has just been shut down due to budget cuts!).</p>
+
+<p>In most of the libraries I&rsquo;ve been to in the UK, they usually have about 3 computer books:<br/>
+* Windows XP for Dummies<br/>
+* How to use an iPod<br/>
+* C++ in 24 Hours</p>
+
+<p>However, the Mountain View library has a few hundred computer books. It is pretty impressive.</p>
+
+<p>Whilst we were there I spotted a few books on Ruby and Rails, given I&rsquo;m interested in learning new things (and have a history of using Python), I thought I&rsquo;d give it a go. I know I&rsquo;m a little late to the party, but I&rsquo;d rather be playing with something like this than watching some rubbish on the TV.</p>
+
+<p>Thankfully, Ruby, Gems, and Rails are all pre-installed on my Mac. Unfortunately though, the book I&rsquo;ve borrowed suggests I use MySQL as the DB, and MySQL isn&rsquo;t preinstalled.</p>
+
+<p>Whilst the installer was pretty simple, getting it to work with Rails has been rather more troublesome. I thought I&rsquo;d post about how I&rsquo;d managed to do it, but I&rsquo;m still not there &ndash; and I&rsquo;ve spent the past 2 hours trying to get it to work. <img src='http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_sad.gif' alt=':-(' class='wp-smiley' /></p>
+
+<p>I guess that is the problem with computer books, they are out of date as soon as they are written. Maybe the UK library model works best <img src='http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> .</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Desktop Icons]]></title>
+    <link href="http://richsomerfield.com/blog/2009/05/07/desktop-icons/"/>
+    <updated>2009-05-07T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2009/05/07/desktop-icons</id>
+    <content type="html"><![CDATA[<p>One of the things I love about being able to write code, is the ability to create small tools to help me use my computer.  I&rsquo;ve always enjoyed this side of programming, which will probably explain why I&rsquo;m always creating more.</p>
+
+<p>On this blog post, I&rsquo;ll be describing a tool I&rsquo;ve written that I keep coming back to.  With some changes I&rsquo;ve made over the past few days is even more useful. </p>
+
+<p>In Windows, I love the accessibility of putting things on to the Desktop.  At the same time, I&rsquo;m always trying to tidy it up and keep it clean as otherwise I find it distracting.  As such, I created a tool to show or hide the icons displayed on the desktop; this is now available in the Vista by right-clicking on the desktop.  The original version was only triggered by clicking on the SystemTray icon, or by pressing Ctrl+1. </p>
+
+<p>Since the original version, it now supports a useful addition, in that when the icons are hidden, if you hold down the CapsLock key for more than a few seconds, the icons will appear and you can use them.  When you release the CapsLock key it will hide them again.  The beauty of using CapsLock, is that it doesn&rsquo;t interfere with the mouse and you can interact with the icons without any problems.</p>
+
+<p>The most recent feature I&rsquo;ve added is to save and restore the Desktop icon positions.  This is activated by the &ldquo;Save Icon Position&#8221; and "Restore Icon Position&#8221; from the SystemTray icon.  This information is saved to disk so that it can be used again and again.</p>
+
+<p>I&rsquo;ve made the tool available via ClickOnce, so it would install to your StartMenu by clicking on the link below.  I hope you find this tool useful &ndash; if so, you can always donate via PayPal.</p>
+
+<p><a href="http://www.richsomerfield.com/downloads/desktoptools/publish.htm">http://www.richsomerfield.com/downloads/desktoptools/publish.htm</a></p>
+
+<p>Note: If running on Vista, with UAC enabled, you may need to run as Administrator &ndash; this is due to the way the app needs to interact with the desktop.</p>
+]]></content>
+  </entry>
+  
+</feed>

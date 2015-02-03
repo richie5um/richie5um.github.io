@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: productivity | RichSomerfield.com]]></title>
+  <link href="http://richsomerfield.com/blog/categories/productivity/atom.xml" rel="self"/>
+  <link href="http://richsomerfield.com/"/>
+  <updated>2014-09-08T10:02:00-07:00</updated>
+  <id>http://richsomerfield.com/</id>
+  <author>
+    <name><![CDATA[Rich Somerfield]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Mac and Me - Filing #2]]></title>
+    <link href="http://richsomerfield.com/blog/2012/11/05/my-mac-and-me-filing-2/"/>
+    <updated>2012-11-05T12:00:00-08:00</updated>
+    <id>http://richsomerfield.com/blog/2012/11/05/my-mac-and-me-filing-2</id>
+    <content type="html"><![CDATA[<h3>Introduction</h3>
+
+<p>So far we’ve looked at how to automatically organise the Desktop folder by moving <em>old and unpinned</em> files to a separate <strong>Notes</strong> folder. The next stage is to automatically organise the <strong>Notes</strong> folder.</p>
+
+<h3>Notes</h3>
+
+<p>I generate two types of content:</p>
+
+<ul>
+<li>General information/notes.</li>
+<li>Project specific information/notes.</li>
+</ul>
+
+
+<p>The former suits a filing system based on <em>Year + Month</em>. The latter suits a filing system based on project specific buckets.</p>
+
+<h3>Solution</h3>
+
+<p>Once again, <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> to the rescue &ndash; I really need to get a referer link <img src='http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> .</p>
+
+<p>First step is to tell Hazel to monitor the <em>Notes</em> folder:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/NotesFolder.png" alt="" /></p>
+
+<p>After that we create our rules for that folder:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/Rules.png" alt="" /></p>
+
+<p>As per my description in the <a href="#notes">Notes</a> section, there are two different types of rules here:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/RuleTypes.png" alt="" /></p>
+
+<p>The ones I’ve marked as <em>green</em> are the project specific ones. As Hazel runs the rules from top to bottom, these get matched first. The one I’ve marked as <em>orange</em> is for the general notes.</p>
+
+<h3>Solution &ndash; Project Specific Rules</h3>
+
+<p>For the project specific rules, I (currently) rely on a string match against the file/folder name. There is probably a more elegant mechanism, but, for now, this keeps things simple.</p>
+
+<p>The configuration for the project specific rules are pretty simple:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/ExampleRule.png" alt="" /></p>
+
+<p>Here we are looking for a piece of text in the name, and if found, we move that to the project specific folder.</p>
+
+<h3>Solution &ndash; Date Sorting Rule</h3>
+
+<p>For the general rule, we use the information from the file/folders creation date to file it into Year/Month sub-folders, so in Finder it ultimately looks like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/NotesFolderFinder.png" alt="" /></p>
+
+<p>The logic for the sorting is pretty simple:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/DateSortRule.png" alt="" /></p>
+
+<p>We ignore anything that starts with ’20’ &ndash; this a bit of a hack to prevent the year folders from being analysed. <a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><a href="http://www.noodlesoft.com/hazel.php">1</a></a>.</p>
+
+<p>Then we create a ‘Sort into subfolder’ action. You can use any format you like, but I prefer the <em><Year> / <MonthNumber>. <MonthName></em> format, for example ‘2012 / 09. September’. This gives you correct alphabetical sorting, but maintains readability.</p>
+
+<p>To create that format you need to define the pattern like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/DateFolderFormat.png" alt="" /></p>
+
+<p>The <strong>Year</strong> <em>date created</em> part is built like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/DateCreated.png" alt="" /></p>
+
+<p>The arrow divider is a folder separator &ndash; so the month is a sub-folder of the year.</p>
+
+<p>The <strong>Month</strong> <em>date created</em> part is built like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/MonthCreated.png" alt="" /></p>
+
+<p>And the example in Hazel should look like this:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling2/ExampleDateFolder.png" alt="" /></p>
+
+<h3>Done</h3>
+
+<p>With this rule set, and the Desktop rule set we’ve now got three different ways of filing our files:</p>
+
+<ul>
+<li>Leave on the Desktop to be automatically organised.</li>
+<li>Move directly to the Notes folder to immediately initate automated organisation.</li>
+<li>Manually move directly to the target folder.</li>
+</ul>
+
+
+<h3>Future</h3>
+
+<p>Ideally I want to get used to creating MultiMarkdown tags, and using these to help with automated filing. But for now, the above approach is working well.</p>
+
+<p>In the next post, we’ll tie our filing system to a task management system.</p>
+
+<p>Hope you found this useful, I’m definitely interested in your feedback.</p>
+
+<pre><code>I did think of using a Color Label for those, but that they complicates other things. You can use any mechanism you think best for this bit. For me, I just have to remember not to start any of my notes with ’20’. &lt;a href="#fnref:1" title="return to article" class="reversefootnote"&gt;&amp;#160;&amp;#8617;&lt;/a&gt;
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Mac and Me - Filing #1]]></title>
+    <link href="http://richsomerfield.com/blog/2012/10/04/my-mac-and-me-filing-1/"/>
+    <updated>2012-10-04T13:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2012/10/04/my-mac-and-me-filing-1</id>
+    <content type="html"><![CDATA[<h3>Introduction</h3>
+
+<p>How you organise files, and how you keep then organised, is a pretty much universal problem. Thanks to <a href="http://www.noodlesoft.com/hazel.php">Hazel</a>, I’ve got an automated mechanism (default) and a manual mechanism (override). In this post I&rsquo;ll describe the first stage of my current automated mechanism.</p>
+
+<h3>The Desk(top)</h3>
+
+<p>The desktop is a great place to put things; quick access and easy visibility. It is fine for it to be a permant place for some things, but the problem is that for the majority of items it <em>should</em> be temporary, otherwise it easily gets cluttered and productivity suffers.</p>
+
+<p>I keep a small number of things on my desktop; things that I need quick access to, and, importantly, that I am actively working on. For everything else, I got into the habit of manually filing things away into folders &ndash; the problem with this though is that it can be time consuming, hence looking for an automated system.</p>
+
+<h3>Vision</h3>
+
+<p>In trying to automatically manage my desktop, I need two capabilities:</p>
+
+<ol>
+<li>Ability to <strong>pin</strong> items to the desktop &ndash; so they are permanatly left their (until <strong>unpinned</strong>).</li>
+<li>Automatic mechanism for moving files/folders into an organised structure (i.e. off my desktop).
+
+<ul>
+<li>Not instantly, but allowing them to reside there for a short period of time.</li>
+</ul>
+</li>
+</ol>
+
+
+<h3>Solution</h3>
+
+<p><a href="http://www.noodlesoft.com/hazel.php">Hazel</a> to the rescue.</p>
+
+<p>The first action is to monitor the <strong>Desktop</strong> folder, and create a <strong>Clean Up</strong> rule:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling1/DesktopMain.png" alt="Hazel: Desktop Folder" /></p>
+
+<p>The <strong>Clean Up</strong> rule monitors the Desktop folder, and anything not pinned (no Color Label), that is older than today, gets automatically moved to the <strong>Notes</strong> folder:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling1/DesktopCleanUpRule.png" alt="Hazel: Clean Up Rule" /></p>
+
+<p>I also keep an alias to the Notes folder directly on my desktop, so that I can easily move things there without having to wait for the clean-up routine:</p>
+
+<p><img src="images/posts/MyMacAndMeFiling1/NotesAlias.png" alt="" /></p>
+
+<p>That is it for this post, but stay tuned for the next in the series where we make this filing system even more useful.</p>
+]]></content>
+  </entry>
+  
+</feed>

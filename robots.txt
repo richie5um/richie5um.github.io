@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://richsomerfield.com/sitemap.xml 

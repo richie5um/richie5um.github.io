@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Development | RichSomerfield.com]]></title>
+  <link href="http://richsomerfield.com/blog/categories/development/atom.xml" rel="self"/>
+  <link href="http://richsomerfield.com/"/>
+  <updated>2014-09-08T10:02:00-07:00</updated>
+  <id>http://richsomerfield.com/</id>
+  <author>
+    <name><![CDATA[Rich Somerfield]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Mac and Me - Filing #3]]></title>
+    <link href="http://richsomerfield.com/blog/2012/11/30/my-mac-and-me-filing-3/"/>
+    <updated>2012-11-30T12:00:00-08:00</updated>
+    <id>http://richsomerfield.com/blog/2012/11/30/my-mac-and-me-filing-3</id>
+    <content type="html"><![CDATA[<h3>Introduction</h3>
+
+<p>After a month of using my <a href="http://www.noodlesoft.com/hazel.php">Hazel</a>-based filing system, I&rsquo;ve made a minor improvement that has had a big benefit.</p>
+
+<p>Whilst the automated clean-up mechanism mentioned in <a href="http://blog.richsomerfield.com/?p=198">My Mac and Me &ndash; Filing #1</a> has been very useful, one problem is that it takes a day for content to be tidyied up. Sometimes, there is a file on the Desktop that you want to be tidyied up immediately.</p>
+
+<h3>Solution</h3>
+
+<p>The solution is pretty simple.</p>
+
+<p>I&rsquo;ve added a new rule to the Desktop folder in Hazel. This new rule is triggered when the color label for a file is set to red. When Hazel detects this, it removes the color label, and moves it immediately to my Notes folder &ndash; which then triggers the filing system described in <a href="http://blog.richsomerfield.com/?p=201">My Mac and Me &ndash; Filing #2</a>.<figure></p>
+
+<p><img src="images/posts/MyMacAndMeFiling3/DesktopCleanup.png" alt="" /></figure></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Mac and Me]]></title>
+    <link href="http://richsomerfield.com/blog/2012/09/26/my-mac-and-me/"/>
+    <updated>2012-09-26T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2012/09/26/my-mac-and-me</id>
+    <content type="html"><![CDATA[<h3>Introduction</h3>
+
+<p>This will be a bit of a brain dump, but I wanted to set the scene on how I’m using my Mac, so that I can follow up with some more interesting posts.</p>
+
+<h3>Plain Text</h3>
+
+<p>I’m a big <strong>plain text</strong> geek &ndash; I write pretty much everything in a plain text editor (Notes / Emails / Documents / Ideas / SourceCodeScratchPad).</p>
+
+<p>Why? There a number of reasons:</p>
+
+<ul>
+<li>I’ve wasted far too many hours of my life trying to get bullet points (amongst other things) to line up correctly in MS Word. I’m sure it is all my fault, but it doesn&rsquo;t stop it from happening. And it is always annoying!</li>
+<li>With switching quickly between Win, Mac, iOS and Web, there really is only one format that you know you can always rely on using: plain text.</li>
+<li>I’ve always liked the idea of separating the content, from the presentation. It’s is how we write well architected code, so there is no reason why it shouldn&rsquo;t apply to documents / notes.</li>
+<li>What file format can you interact with using scripts and other tools.</li>
+<li>In 10 years time, what is the likelihood that all of the current complex file formats are still going to be readable? Plain text will almost certainly still be usable.</li>
+</ul>
+
+
+<p>I’m currently using a few different text editors; <a href="http://bywordapp.com/">Byword (Mac+iOS)</a>, <a href="http://www.sublimetext.com/2">Sublime Text 2 (Mac)</a>, <a href="http://www.textasticapp.com/">Textastic (iOS)</a>, <a href="http://writeup.prasannag.com/">WriteUp (iOS)</a>, and <a href="http://www.iawriter.com/">iA Writer (iOS)</a>. They all work slightly differently, and I keep changing my mind on which I prefer to use, but the beauty of writing everything in <strong>plain text</strong> is that it really doesn&rsquo;t matter what app I use <img src='http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> .</p>
+
+<h3>Content + Markup</h3>
+
+<p>In theory, HTML+CSS already gives a very flexible (and plain text based) mechanism for creating content. The problem is that it is a pain to directly write HTML from scratch &ndash; especially when you are using a smartphone text editor. Added to that is the fact that it isn&rsquo;t particularly readable as raw HTML, you really have to present it to be able to easily read the content.</p>
+
+<p>The solution I use is <a href="http://www.daringfireball.com/markdown">Markdown</a> <a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><a href="http://bywordapp.com/">1</a></a>. It has been around for a long time, but seems (at least to me) to have really taken off in usage over the past few years. I’m sure a big part of this is related to the increase in the number of devices that people are exposed to, and the lack of support on them all for the complex file formats.</p>
+
+<h3>File Organization</h3>
+
+<p>I recently took the plunge and bought <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> for Mac. Before I bought it, I’d been thinking that because it seemed such a simple app, I could do everything it did myself. After buying it, I’ve realized that the previous sentence is still true, but the difference is that I can forget about all the plumbing bits, and focus on creating some interesting mashups. It is a cool app, and I’ve only really scratched the surface.</p>
+
+<h3>Tasks Management</h3>
+
+<p>I’ve been using <a href="http://www.omnigroup.com/products/omnifocus/">OmniFocus</a> for my task management for quite a while now. I’m still not as efficient as I should be, but it has definitely improved since I started using it.</p>
+
+<h3>End</h3>
+
+<p>So, that is a bit of a background, my next post will describe how I’ve been using some of these tools to improve productivity.</p>
+
+<pre><code>Technically, I’m mainly using the [MultiMarkdown][9] syntax. &lt;a href="#fnref:1" title="return to article" class="reversefootnote"&gt;&amp;#160;&amp;#8617;&lt;/a&gt;
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Problem with Persisted iOS Simulator Credentials]]></title>
+    <link href="http://richsomerfield.com/blog/2012/08/28/problem-with-persisted-ios-simulator-credentials/"/>
+    <updated>2012-08-28T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2012/08/28/problem-with-persisted-ios-simulator-credentials</id>
+    <content type="html"><![CDATA[<p>If, like me, you <em>accidentally</em> use NSURLCredentialPersistencePermanent, like below, and run it on the iOS Simulator the credentials will be stored permantly &ndash; as you might imagine. The problem is that there is no (as far as I could find) obvious way to get rid of those permantly stored credentials.</p>
+
+<pre><code>    -(void)connection:(NSURLConnection *)connection 
+      didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge*)challenge {
+
+        if([challenge previousFailureCount] == 0) {
+
+            NSURLCredential *newCredential = [NSURLCredential 
+                credentialWithUser:self.username 
+                          password:self.password
+                       persistence:NSURLCredentialPersistencePermanent];
+            [[challenge sender] useCredential:newCredential 
+                   forAuthenticationChallenge:challenge];
+        } else {
+            [[challenge sender] cancelAuthenticationChallenge:challenge];
+        }
+    }
+</code></pre>
+
+<h3>Solution</h3>
+
+<p>The simple solution to removing those store credentials is to manually delete the KeyChain DB file from your machine. As of 28th August 2012, the KeyChain file is stored in: ~/Library/Application Support/iPhone Simulator/5.1/Library/Keychains</p>
+
+<p>I deleted the file: <em>keychain-2-debug.db</em>, but yours may be called something different.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OneNoteJournal - Open Sourced]]></title>
+    <link href="http://richsomerfield.com/blog/2012/05/22/onenotejournal-open-sourced/"/>
+    <updated>2012-05-22T00:00:00-07:00</updated>
+    <id>http://richsomerfield.com/blog/2012/05/22/onenotejournal-open-sourced</id>
+    <content type="html"><![CDATA[<p>In case someone finds it useful, I&rsquo;ve opened sourced my OneNoteJournal code.  Available here:<br/>
+<a href="https://github.com/richie5um/OneNoteJournal">https://github.com/richie5um/OneNoteJournal</a></p>
+
+<p>Hope you like.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Top x Coding Issues]]></title>
+    <link href="http://richsomerfield.com/blog/2012/01/19/top-x-coding-issues/"/>
+    <updated>2012-01-19T00:00:00-08:00</updated>
+    <id>http://richsomerfield.com/blog/2012/01/19/top-x-coding-issues</id>
+    <content type="html"><![CDATA[<p>My experience in Software Engineering has shown me that a certain breed of bugs keeps re-occurring. The following is my list of the biggest (needless) causes of bugs:<br/>
+1. Uninitialized variables.<br/>
+2. Poorly named variables and functions.<br/>
+3. Multiple function exit points (i.e. multiple returns).<br/>
+4. Not checking return codes.<br/>
+5. Not checking before de-referencing.<br/>
+6. Not verifying target buffer lengths before using them.</p>
+
+<p>I&rsquo;ve been involved in numerous discussions about what should be included in a Code Standards Checklist, and in my opinion, this list is pretty much all you need. Anything more and people ignore it anyway.</p>
+]]></content>
+  </entry>
+  
+</feed>
