@@ -6,6 +6,11 @@
       <description>Most recent changes with links to updates.</description>
       <language>en</language>      
          <item>
+            <title>Version 1.1.238 - (1 bug fixed)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.238.zip" sparkle:version="1.1.238" type="application/octet-stream"/>
+         </item>                        
+         <item>
             <title>Version 1.1.210 - (1 bug fixed)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
             <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.210.zip" sparkle:version="1.1.210" type="application/octet-stream"/>
