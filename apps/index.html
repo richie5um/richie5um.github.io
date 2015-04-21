@@ -134,65 +134,25 @@
 
 <ul>
 <li>Configure TextBar to run scripts/commands/&hellip; and display the results in your menubar.</li>
-<li>Click the TextBar item to add the text to your clipboard.</li>
+<li>Quickly copy the text to your clipboard.</li>
 <li>Enable/disable each item individually.</li>
 <li>Configure how often you want each item to be updated.</li>
+<li>Configure whether you want to be notified when the text changes.</li>
+<li>Drag/Drop reordering in the Preferences table.</li>
+
 </ul>
+
+<h3>Review:</h3>
+<p><a href="http://www.macstories.net/mac/textbar-puts-your-text-into-the-menu-bar/">MacStories - TextBar Puts Your Text into the Menu Bar</a>
 
 
 <h3>Examples:</h3>
-
-
-<ul>
-<li>What is my local IP address?
-
-<ul>
-<li><code>ipconfig getifaddr en0</code></li>
-</ul>
-</li>
-<li>What is my external IP address?
-
-<ul>
-<li><code>curl -s -H 'Accept: application/json' ipinfo.io | python -c "import json;import sys;print json.load(sys.stdin)['ip']"</code></li>
-</ul>
-</li>
-<li>How much disk space am I using?
-
-<ul>
-<li><code>df / | awk '{ print $5 }' | tail -n 1</code></li>
-</ul>
-</li>
-<li>What is the time in a different country (e.g. UK)?
-
-<ul>
-<li><code>UKDATE=\`TZ=GB date +"%H:%M %p"\` ; echo "UK: $UKDATE"</code></li>
-</ul>
-</li>
-<li>Is my website running?
-
-<ul>
-<li><code>ALIVE=\`curl -Is www.google.com | grep -q "200 OK"\` && echo "Google Alive" || echo "Google Dead"</code></li>
-</ul>
-</li>
-<li>Apple Battery Percentage
-
-<ul>
-<li><code>ioreg -n AppleSmartBattery -r | awk '$1~/Capacity/{c[$1]=$3} END{OFMT="%.2f%%"; max=c["\"MaxCapacity\""]; print (max>0? 100*c["\"CurrentCapacity\""]/max: "?")}'</code></li>
-</ul>
-</li>
-<li>Show iTunes song and album
-
-<ul>
-<li><code>TRACK=\`osascript -e 'tell application "iTunes"' -e 'set currentTrackName to "[OFF]"' -e 'if player state is playing then' -e 'set currentTrackName to get name of current track & " [" & album of current track & "]"' -e 'end if' -e 'return currentTrackName' -e 'end tell'\` ; echo "> $TRACK"</code></li>
-</ul>
-</li>
-</ul>
+<p><a href="https://github.com/richie5um/TextBar-Recipies">TextBar - Recipies</a>
+<p>Contributions welcome!
 
 
 <h3>Download:</h3>
-
-
-<p><a href="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.344.zip" class="btn btn-primary" role="button">Download app</a>
+<p><a href="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.2.140.zip" class="btn btn-primary" role="button">Download app</a>
 <a href="https://pay.paddle.com/checkout/490952" class="btn btn-success" role="button">Purchase</a></p>
 
 <h3>Note:</h3>
