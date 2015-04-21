@@ -4,51 +4,51 @@
       <title>TextBar Changelog</title>
       <link>http://www.richsomerfield.com/apps/textbar/sparkle_textbar.xml</link>
       <description>Most recent changes with links to updates.</description>
-      <language>en</language>      
+      <language>en</language>
          <item>
-            <title>Version 1.2.164 - (Bug fixes)</title>
+            <title>Version 1.2.165 - (Bug fixes)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-            <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.2.164.zip" sparkle:version="1.2.164" type="application/octet-stream"/>
-         </item>                                          
+            <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.2.165.zip" sparkle:version="1.2.165" type="application/octet-stream"/>
+         </item>
          <item>
             <title>Version 1.2.140 - (Huge new update)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
             <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.2.140.zip" sparkle:version="1.2.140" type="application/octet-stream"/>
-         </item>                                          
+         </item>
          <item>
             <title>Version 1.1.344 - (1 new features)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
             <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.344.zip" sparkle:version="1.1.344" type="application/octet-stream"/>
-         </item>                                    
+         </item>
          <item>
             <title>Version 1.1.340 - (1 new features)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
             <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.340.zip" sparkle:version="1.1.340" type="application/octet-stream"/>
-         </item>                              
+         </item>
          <item>
             <title>Version 1.1.335 - (2 new features)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
             <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.335.zip" sparkle:version="1.1.335" type="application/octet-stream"/>
-         </item>                              
+         </item>
          <item>
             <title>Version 1.1.240 - (1 bug fixed)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
             <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.240.zip" sparkle:version="1.1.240" type="application/octet-stream"/>
-         </item>                        
+         </item>
          <item>
             <title>Version 1.1.238 - (1 bug fixed)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
             <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.238.zip" sparkle:version="1.1.238" type="application/octet-stream"/>
-         </item>                        
+         </item>
          <item>
             <title>Version 1.1.210 - (1 bug fixed)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
             <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.210.zip" sparkle:version="1.1.210" type="application/octet-stream"/>
-         </item>                        
+         </item>
          <item>
             <title>Version 1.1.209 - (First official version)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
             <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.1.209.zip" sparkle:version="1.1.209" type="application/octet-stream"/>
-         </item>                        
+         </item>
    </channel>
 </rss>
