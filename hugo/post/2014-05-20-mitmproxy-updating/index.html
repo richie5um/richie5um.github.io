@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>mitmproxy - updating</title>
+  <meta name="description" content="mitmproxy - updating">
+  <meta name="author" content="Rich Somerfield">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="http://www.richsomerfield.com/hugo/css/fonts.css">
+  <link rel="stylesheet" href="http://www.richsomerfield.com/hugo/css/normalize.css">
+  <link rel="stylesheet" href="http://www.richsomerfield.com/hugo/css/skeleton.css">
+  <link rel="stylesheet" href="http://www.richsomerfield.com/hugo/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://www.richsomerfield.com/hugo/highlight/styles/default.css">
+  
+  <script src="http://www.richsomerfield.com/hugo/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+<header id="menu">
+  <div class="container">
+	<span class="logo">Rich Somerfield</span>
+	<a>&#9776;</a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="eight columns offset-by-two">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="http://www.richsomerfield.com/hugo" class="brand" style="font-weight:bold;font-size:normal"> Rich Somerfield </a></li>
+		  <li class="u-pull-right cate"> <a href="http://www.richsomerfield.com/hugo/about/" class=""> About </a></li>
+		  <li class="u-pull-right cate"> <a href="http://www.richsomerfield.com/hugo/apps/" class=""> Apps </a></li>
+		  <li class="u-pull-right cate"> <a href="http://www.richsomerfield.com/hugo" class=""> Blog </a></li>
+		  
+		</ul>
+	  </div>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="eight columns offset-by-two">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+		  <time class="">2014-05-20</time>
+		  
+		  
+		  
+
+		  
+
+		  
+
+		</p>
+		<h5>mitmproxy - updating</h5>
+	  </div>
+
+	  <div class="post">
+		<p>After a rather annoying hour, I&rsquo;ve managed to update my copy of mitmproxy to the latest. I&rsquo;d previously used pip to install it, but, that was failing to get the latest version (including concurrent requests).</p>
+
+<p>In the end, I reverted to the manual approach of:</p>
+
+<ul>
+<li><code>git clone https://github.com/mitmproxy/mitmproxy.git</code>
+
+<ul>
+<li><code>sudo python setup.py install</code></li>
+</ul></li>
+<li><code>git clone https://github.com/mitmproxy/netlib</code>
+
+<ul>
+<li><code>sudo python setup.py install</code></li>
+</ul></li>
+<li><code>git clone https://github.com/pyca/pyopenssl</code>
+
+<ul>
+<li><code>sudo python setup.py install</code></li>
+</ul></li>
+</ul>
+
+<p>:-)</p>
+
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-two">
+		<p class="footnote">
+		  
+		  Copyright (c) 2010-2015, Rich Somerfield; all rights reserved.
+		  
+		  
+		  Find me at
+
+		  
+		  <a href="https://github.com/richie5um" >GitHub</a>
+		  
+
+		  
+
+		  
+		  <a href="https://twitter.com/richie5um">Twitter</a>
+		  
+
+		  
+
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<script src="http://www.richsomerfield.com/hugo/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://www.richsomerfield.com/hugo/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+
