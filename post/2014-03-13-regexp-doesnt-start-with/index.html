@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>RegExp - Doesn&#39;t Start With...</title>
+  <meta name="description" content="RegExp - Doesn&#39;t Start With...">
+  <meta name="author" content="Rich Somerfield">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="http://www.richsomerfield.com//css/fonts.css">
+  <link rel="stylesheet" href="http://www.richsomerfield.com//css/normalize.css">
+  <link rel="stylesheet" href="http://www.richsomerfield.com//css/skeleton.css">
+  <link rel="stylesheet" href="http://www.richsomerfield.com//css/custom.css">
+
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="http://www.richsomerfield.com//apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://www.richsomerfield.com//apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://www.richsomerfield.com//apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://www.richsomerfield.com//apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://www.richsomerfield.com//apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://www.richsomerfield.com//apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://www.richsomerfield.com//apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://www.richsomerfield.com//apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://www.richsomerfield.com//apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://www.richsomerfield.com//favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://www.richsomerfield.com//android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://www.richsomerfield.com//favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://www.richsomerfield.com//favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://www.richsomerfield.com//manifest.json">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="http://www.richsomerfield.com//mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  
+  <link rel="stylesheet" href="http://www.richsomerfield.com//highlight/styles/default.css">
+  
+  <script src="http://www.richsomerfield.com//highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+<header id="menu">
+  <div class="container">
+	<span class="logo">Rich Somerfield</span>
+	<a>&#9776;</a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="eight columns offset-by-two">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="http://www.richsomerfield.com/" class="brand" style="font-weight:bold;font-size:normal"> Rich Somerfield </a></li>
+		  <li class="u-pull-right cate"> <a href="http://www.richsomerfield.com//about/" class=""> About </a></li>
+		  <li class="u-pull-right cate"> <a href="http://www.richsomerfield.com//apps/" class=""> Apps </a></li>
+		  <li class="u-pull-right cate"> <a href="http://www.richsomerfield.com/" class=""> Blog </a></li>
+		  
+		</ul>
+	  </div>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="eight columns offset-by-two">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+		  <time class="">2014-03-13</time>
+		  
+		  
+		  
+
+		  
+
+		  
+
+		</p>
+		<h5>RegExp - Doesn&#39;t Start With...</h5>
+	  </div>
+
+	  <div class="post">
+		<p><em>Hopefully this&rsquo;ll remind me how to do it rather than wasting another 20 mins!</em></p>
+
+<p>To use a regular expression to only match a string, if it in not preceeded by a certain string, you can use a <em>negative lookbehind assertion</em>.</p>
+
+<p>Given an input set of:</p>
+
+<ul>
+<li>Object</li>
+<li>RSObject</li>
+<li>NSObject</li>
+<li>Test RSObject</li>
+</ul>
+
+<p>We want to find <strong>Object</strong> only if it isn&rsquo;t preceeded by <strong>RS</strong>.</p>
+
+<h3>Solution:</h3>
+
+<pre><code>(?&lt;!RS)Object
+</code></pre>
+
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-two">
+		<p class="footnote">
+		  
+		  Copyright (c) 2010-2015, Rich Somerfield; all rights reserved.
+		  
+		  
+		  Find me at
+
+		  
+		  <a href="https://github.com/richie5um" >GitHub</a>
+		  
+
+		  
+
+		  
+		  <a href="https://twitter.com/richie5um">Twitter</a>
+		  
+
+		  
+
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<script src="http://www.richsomerfield.com//js/jquery.min.js" type="text/javascript"></script>
+<script src="http://www.richsomerfield.com//js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+
