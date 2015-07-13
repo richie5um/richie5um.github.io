@@ -9,8 +9,74 @@
     <managingEditor>rs@richsomerfield.com (Rich Somerfield)</managingEditor>
     <webMaster>rs@richsomerfield.com (Rich Somerfield)</webMaster>
     <copyright>Copyright (c) 2010-2015, Rich Somerfield; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 30 May 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2015 16:21:36 +0000</lastBuildDate>
     <atom:link href="http://www.richsomerfield.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://www.richsomerfield.com/about/</link>
+      <pubDate>Tue, 24 Mar 2015 16:21:36 +0000</pubDate>
+      <author>rs@richsomerfield.com (Rich Somerfield)</author>
+      <guid>http://www.richsomerfield.com/about/</guid>
+      <description>&lt;p&gt;Live/Work near Manchester, UK.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Apps</title>
+      <link>http://www.richsomerfield.com/apps/</link>
+      <pubDate>Tue, 24 Mar 2015 16:21:36 +0000</pubDate>
+      <author>rs@richsomerfield.com (Rich Somerfield)</author>
+      <guid>http://www.richsomerfield.com/apps/</guid>
+      <description>
+
+&lt;h2 id=&#34;textbar-mac-app:c6a4be2f6b503cc5d5e20765edc3f3ee&#34;&gt;TextBar - Mac App&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;TextBar is a tiny but powerful app that lets you add any text to your MenuBar.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../images/TextBar-Intro.png&#34; alt=&#34;TextBar&#34; /&gt;
+
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;strong&gt;&lt;a href=&#34;http://www.richsomerfield.com/apps/textbar/TextBar.app-1.5.210.zip&#34;&gt;Download app&lt;/a&gt;&lt;/strong&gt; || &lt;strong&gt;&lt;a href=&#34;https://pay.paddle.com/checkout/490952&#34;&gt;Purchase&lt;/a&gt;&lt;/strong&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;TextBar is an awesome app which solves a problem that I have been struggling with for at least three years&amp;rdquo; - &lt;a href=&#34;http://www.macstories.net/mac/textbar-puts-your-text-into-the-menu-bar/&#34;&gt;MacStories.net&lt;/a&gt;
+&lt;p&gt;
+&amp;ldquo;[it] takes a little messing around with before you find a use for it, but it’s well worth the time&amp;rdquo; - &lt;a href=&#34;http://lifehacker.com/textbar-stuffs-any-text-you-want-into-your-menubar-1699721812&#34;&gt;lifehacker&lt;/a&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;key-features:c6a4be2f6b503cc5d5e20765edc3f3ee&#34;&gt;Key Features:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Configure TextBar to run scripts/commands/… and display the results in your menubar.&lt;/li&gt;
+&lt;li&gt;Quickly copy the text to your clipboard.&lt;/li&gt;
+&lt;li&gt;Enable/disable each item individually.&lt;/li&gt;
+&lt;li&gt;Configure how often you want each item to be updated.&lt;/li&gt;
+&lt;li&gt;Configure whether you want to be notified when the text changes.&lt;/li&gt;
+&lt;li&gt;Drag/Drop reordering in the Preferences table.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;examples:c6a4be2f6b503cc5d5e20765edc3f3ee&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/richie5um/TextBar-Recipes&#34;&gt;TextBar - Recipes&lt;/a&gt; [Contributions welcome!]&lt;/p&gt;
+
+&lt;h3 id=&#34;extras:c6a4be2f6b503cc5d5e20765edc3f3ee&#34;&gt;Extras&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html&#34;&gt;Release Notes&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;note:c6a4be2f6b503cc5d5e20765edc3f3ee&#34;&gt;Note&lt;/h4&gt;
+
+&lt;p&gt;TextBar is limited by the available space in your MenuBar - which is dependent on screen resolution and the number of other items being displayed. If you find that you run out of MenuBar space, then &lt;a href=&#34;http://www.macbartender.com&#34;&gt;MacBartender&lt;/a&gt; is a fantastic app to free some space.&lt;/p&gt;
+
+&lt;h4 id=&#34;minimum-system-requirements:c6a4be2f6b503cc5d5e20765edc3f3ee&#34;&gt;Minimum System Requirements&lt;/h4&gt;
+
+&lt;p&gt;Intel, 64-bit processor, OS X 10.9 or later.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>WWDC Speculation - 2014</title>
@@ -631,66 +697,6 @@ images/photos/TextBar3.png: TextBar for Mac&lt;/p&gt;
 6. Not verifying target buffer lengths before using them.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve been involved in numerous discussions about what should be included in a Code Standards Checklist, and in my opinion, this list is pretty much all you need. Anything more and people ignore it anyway.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Fix a Sony Remote - RM-ED035</title>
-      <link>http://www.richsomerfield.com/post/2011-09-24-how-to-fix-a-sony-remote-rm-ed035/</link>
-      <pubDate>Sat, 24 Sep 2011 00:00:00 +0000</pubDate>
-      <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://www.richsomerfield.com/post/2011-09-24-how-to-fix-a-sony-remote-rm-ed035/</guid>
-      <description>
-
-&lt;h1 id=&#34;problem:6541a7bc6978d73dc546680f992c3b0e&#34;&gt;Problem&lt;/h1&gt;
-
-&lt;p&gt;My youngest son (12 months) decided our TV remote would be good to chew on - he is really rather like a dog at the moment!&lt;/p&gt;
-
-&lt;p&gt;He didn&amp;rsquo;t have it for too long, but managed to do enough damage that the remote was repeatedly sending button presses to the TV. &lt;img src=&#39;http://blog.richsomerfield.com/wp-includes/images/posts/smilies/icon_sad.gif&#39; alt=&#39;:-(&#39; class=&#39;wp-smiley&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I tried the usual tricks: taking the batteries out and putting them back, using a hairdryer to try and get rid of moisture, and mashing the buttons. Nothing worked.&lt;/p&gt;
-
-&lt;p&gt;Next, a quick check on eBay suggested I could get a replacement for £15, so not too bad, but worth me having a go at fixing it.&lt;/p&gt;
-
-&lt;p&gt;A search on Google didn&amp;rsquo;t turn up anything useful to help fix it, so after a few experiments, I managed to take it to pieces, and thought I should post here in case anyone else has the same problem and wanted some help.&lt;/p&gt;
-
-&lt;h1 id=&#34;how-to:6541a7bc6978d73dc546680f992c3b0e&#34;&gt;How To&lt;/h1&gt;
-
-&lt;p&gt;First, you need to get the back cover off. It slides up, so you can replace the batteries, but at this point it isn&amp;rsquo;t obvious how to remove it. There are two ways; you can either use a flat metal blade (I used a table knife, but you may wish to use something safer!) and insert into the seam between the back cover and the main body and then slide it up and down until you pop open the catches, or, the better way, is to half slide up the back cover and you&amp;rsquo;ll notice little grooves that it slots into to help you get it off.&lt;/p&gt;
-
-&lt;p&gt;Next, remove the six little screws. Even with these removed, it is still locked together because of internal catches. I couldn&amp;rsquo;t find a simple way to get this off, so had to use the same flat blade trick as before.&lt;/p&gt;
-
-&lt;p&gt;After you&amp;rsquo;ve got this apart, you can clean the rubber keys and the contact board, and hopefully this will fix it for you. Then, just put it back together and you are done.&lt;/p&gt;
-
-&lt;p&gt;Hope this helps.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>OneNote Journal</title>
-      <link>http://www.richsomerfield.com/post/2011-05-23-onenote-journal/</link>
-      <pubDate>Mon, 23 May 2011 00:00:00 +0000</pubDate>
-      <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://www.richsomerfield.com/post/2011-05-23-onenote-journal/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been using OneNote for about a year now, and am loving (almost) every minute.  There are a few annoying areas (especially the lack, as far as I can tell, of the picture border tools you get in Word/Outlook/&amp;hellip;), but I use it every day to collect information and help we work through you tasks.&lt;/p&gt;
-
-&lt;p&gt;One of the tools that has been recommended to me by my friends is OneNote Journal.  The idea of this is that it can easily create a new day page in OneNote, so that you can keep a daily journal, without having to manually create as page/section/section group with the date.  Unfortunately the tool that they gave me only worked on OneNote 2007, and since I use OneNote 2010, this was no use.&lt;/p&gt;
-
-&lt;p&gt;So, about six months ago I created my own OneNote Journal tool, this time for OneNote 2010.  It won&amp;rsquo;t work on an previous version of OneNote, but seems to work fine for OneNote 2010.&lt;/p&gt;
-
-&lt;p&gt;The tool sits in your Notification Area (aka System Tray), from which there is a menu to change the date format, and also to create an entry.  As well as this, you can use the Windows+J to create a new entry for today.  If one already exists, then it should automatically bring that page to the foreground.  The tool should automatically create the Year, and Month sections for you - to keep it nicely organized.&lt;/p&gt;
-
-&lt;p&gt;[][1]&lt;a href=&#34;images/posts/2011/05/OneNoteJournal-Options.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-166&#34; title=&#34;OneNoteJournal-NotificationTray&#34; src=&#34;images/posts/2011/05/OneNoteJournal-NotificationTray.png&#34; alt=&#34;&#34; width=&#34;280&#34; height=&#34;77&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;images/posts/2011/05/OneNoteJournal-Options.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-167&#34; title=&#34;OneNoteJournal-Options&#34; src=&#34;images/posts/2011/05/OneNoteJournal-Options.png&#34; alt=&#34;&#34; width=&#34;298&#34; height=&#34;216&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;images/posts/2011/05/OneNoteJournal-Organization.png&#34;&gt;&lt;img class=&#34;aligncenter size-medium wp-image-168&#34; title=&#34;OneNoteJournal-Organization&#34; src=&#34;images/posts/2011/05/OneNoteJournal-Organization-300x102.png&#34; alt=&#34;&#34; width=&#34;300&#34; height=&#34;102&#34; /&gt;&lt;/a&gt;
-If you want to download the tool, it is available here:
-&lt;a href=&#34;http://dl.dropbox.com/u/10638488/OneNoteJournal%20v1.2.zip&#34;&gt;http://dl.dropbox.com/u/10638488/OneNoteJournal%20v1.2.zip&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Note: Before you use this, you will need to create a notebook in OneNote called &amp;lsquo;Journal&amp;rsquo;.&lt;/p&gt;
-
-&lt;p&gt;Disclaimer: Make sure you backup your OneNote journals before you use this tool.  Whilst I&amp;rsquo;ve not had any problems, it is better to be safe.  And if something does go wrong, I will be unable to help.&lt;/p&gt;
 </description>
     </item>
     
