@@ -30,7 +30,7 @@
 
 &lt;/center&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;center&gt;&lt;strong&gt;&lt;a href=&#34;http://www.richsomerfield.com/apps/textbar/TextBar.app-1.7.19.zip&#34;&gt;Download app&lt;/a&gt;&lt;/strong&gt; || &lt;strong&gt;&lt;a href=&#34;https://pay.paddle.com/checkout/490952&#34;&gt;Purchase&lt;/a&gt;&lt;/strong&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;strong&gt;&lt;a href=&#34;http://www.richsomerfield.com/apps/textbar/TextBar.app-1.7.25.zip&#34;&gt;Download app&lt;/a&gt;&lt;/strong&gt; || &lt;strong&gt;&lt;a href=&#34;https://pay.paddle.com/checkout/490952&#34;&gt;Purchase&lt;/a&gt;&lt;/strong&gt;&lt;/center&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;TextBar is an awesome app which solves a problem that I have been struggling with for at least three years&amp;rdquo; - &lt;a href=&#34;http://www.macstories.net/mac/textbar-puts-your-text-into-the-menu-bar/&#34;&gt;MacStories.net&lt;/a&gt;
@@ -43,7 +43,8 @@
 
 &lt;ul&gt;
 &lt;li&gt;Configure TextBar to run scripts/commands/… and display the results in your menubar.&lt;/li&gt;
-&lt;li&gt;Quickly copy the text to your clipboard.&lt;/li&gt;
+&lt;li&gt;Quickly copy the text to your clipboard, or,&lt;/li&gt;
+&lt;li&gt;Configure your own &lt;em&gt;action&lt;/em&gt; scripts (see &lt;a href=&#34;https://github.com/richie5um/TextBar-Recipes#actions&#34;&gt;TextBar Actions&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;Enable/disable each item individually.&lt;/li&gt;
 &lt;li&gt;Configure how often you want each item to be updated.&lt;/li&gt;
 &lt;li&gt;Configure whether you want to be notified when the text changes.&lt;/li&gt;
