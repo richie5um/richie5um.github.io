@@ -6,11 +6,6 @@
             <description>Most recent changes with links to updates.</description>
             <language>en</language>
             <item>
-                <title>Version 1.8.3 - (Features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.8.3.zip" sparkle:version="1.8.3" type="application/octet-stream" />
-            </item>
-            <item>
                 <title>Version 1.7.95 - (Features)</title>
                 <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
                 <enclosure url="http://www.richsomerfield.com/apps/textbar/TextBar.app-1.7.95.zip" sparkle:version="1.7.95" type="application/octet-stream" />
