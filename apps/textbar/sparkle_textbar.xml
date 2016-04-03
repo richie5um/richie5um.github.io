@@ -6,6 +6,11 @@
             <description>Most recent changes with links to updates.</description>
             <language>en</language>
             <item>
+                <title>Version 1.10.19 - (Features)</title>
+                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.19.zip" sparkle:version="1.10.19" type="application/octet-stream" />
+            </item>                        
+            <item>
                 <title>Version 1.10.1 - (Features)</title>
                 <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
                 <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.1.zip" sparkle:version="1.10.1" type="application/octet-stream" />
