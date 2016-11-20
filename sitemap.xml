@@ -2,173 +2,173 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.richsomerfield.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2015-03-24T16:21:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2015-03-24T16:21:36+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/apps/</loc>
+    <loc>http://localhost:1313/apps/</loc>
     <lastmod>2015-03-24T16:21:36+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2014-05-30-wwdc-speculation-2014/</loc>
+    <loc>http://localhost:1313/post/2014-05-30-wwdc-speculation-2014/</loc>
     <lastmod>2014-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2014-05-20-mitmproxy-updating/</loc>
+    <loc>http://localhost:1313/post/2014-05-20-mitmproxy-updating/</loc>
     <lastmod>2014-05-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2014-04-22-using-splunk-to-monitor-os-x-file-access/</loc>
+    <loc>http://localhost:1313/post/2014-04-22-using-splunk-to-monitor-os-x-file-access/</loc>
     <lastmod>2014-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2014-03-13-regexp-doesnt-start-with/</loc>
+    <loc>http://localhost:1313/post/2014-03-13-regexp-doesnt-start-with/</loc>
     <lastmod>2014-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2014-03-05-adventures-in-git-sparsecheckouts/</loc>
+    <loc>http://localhost:1313/post/2014-03-05-adventures-in-git-sparsecheckouts/</loc>
     <lastmod>2014-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2014-02-20-new-mac-app-textbar/</loc>
+    <loc>http://localhost:1313/post/2014-02-20-new-mac-app-textbar/</loc>
     <lastmod>2014-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2012-11-30-my-mac-and-me-filing-3/</loc>
+    <loc>http://localhost:1313/post/2012-11-30-my-mac-and-me-filing-3/</loc>
     <lastmod>2012-11-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2012-10-05-my-mac-and-me-filing-2/</loc>
+    <loc>http://localhost:1313/post/2012-10-05-my-mac-and-me-filing-2/</loc>
     <lastmod>2012-11-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2012-10-04-my-mac-and-me-filing-1/</loc>
+    <loc>http://localhost:1313/post/2012-10-04-my-mac-and-me-filing-1/</loc>
     <lastmod>2012-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2012-08-28-problem-with-persisted-ios-simulator-credentials/</loc>
+    <loc>http://localhost:1313/post/2012-08-28-problem-with-persisted-ios-simulator-credentials/</loc>
     <lastmod>2012-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2012-09-26-my-mac-and-me/</loc>
+    <loc>http://localhost:1313/post/2012-09-26-my-mac-and-me/</loc>
     <lastmod>2012-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2012-05-22-onenotejournal-open-sourced/</loc>
+    <loc>http://localhost:1313/post/2012-05-22-onenotejournal-open-sourced/</loc>
     <lastmod>2012-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2012-01-19-top-x-coding-issues/</loc>
+    <loc>http://localhost:1313/post/2012-01-19-top-x-coding-issues/</loc>
     <lastmod>2012-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2011-09-24-how-to-fix-a-sony-remote-rm-ed035/</loc>
+    <loc>http://localhost:1313/post/2011-09-24-how-to-fix-a-sony-remote-rm-ed035/</loc>
     <lastmod>2011-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2011-05-23-onenote-journal/</loc>
+    <loc>http://localhost:1313/post/2011-05-23-onenote-journal/</loc>
     <lastmod>2011-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-06-16-design-club/</loc>
+    <loc>http://localhost:1313/post/2009-06-16-design-club/</loc>
     <lastmod>2009-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-06-02-creativity/</loc>
+    <loc>http://localhost:1313/post/2009-06-02-creativity/</loc>
     <lastmod>2009-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-05-07-desktop-icons/</loc>
+    <loc>http://localhost:1313/post/2009-05-07-desktop-icons/</loc>
     <lastmod>2009-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-05-04-control-flow/</loc>
+    <loc>http://localhost:1313/post/2009-05-04-control-flow/</loc>
     <lastmod>2009-05-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-04-30-viewpoints/</loc>
+    <loc>http://localhost:1313/post/2009-04-30-viewpoints/</loc>
     <lastmod>2009-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-04-26-writing-skills/</loc>
+    <loc>http://localhost:1313/post/2009-04-26-writing-skills/</loc>
     <lastmod>2009-04-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-04-17-the-zone/</loc>
+    <loc>http://localhost:1313/post/2009-04-17-the-zone/</loc>
     <lastmod>2009-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-04-08-information-overload/</loc>
+    <loc>http://localhost:1313/post/2009-04-08-information-overload/</loc>
     <lastmod>2009-04-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-04-06-my-computer-history/</loc>
+    <loc>http://localhost:1313/post/2009-04-06-my-computer-history/</loc>
     <lastmod>2009-04-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-04-02-vague-apis/</loc>
+    <loc>http://localhost:1313/post/2009-04-02-vague-apis/</loc>
     <lastmod>2009-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-03-31-supportself-fix/</loc>
+    <loc>http://localhost:1313/post/2009-03-31-supportself-fix/</loc>
     <lastmod>2009-03-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-03-28-set-expectations/</loc>
+    <loc>http://localhost:1313/post/2009-03-28-set-expectations/</loc>
     <lastmod>2009-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-03-25-documentation-a-necessary-evil/</loc>
+    <loc>http://localhost:1313/post/2009-03-25-documentation-a-necessary-evil/</loc>
     <lastmod>2009-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-03-18-12/</loc>
+    <loc>http://localhost:1313/post/2009-03-18-12/</loc>
     <lastmod>2009-03-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-03-16-wysiwyg-bnwyw/</loc>
+    <loc>http://localhost:1313/post/2009-03-16-wysiwyg-bnwyw/</loc>
     <lastmod>2009-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/post/2009-03-21-depth-first-development/</loc>
+    <loc>http://localhost:1313/post/2009-03-21-depth-first-development/</loc>
     <lastmod>2009-03-12T00:00:00+00:00</lastmod>
   </url>
   
