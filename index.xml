@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rich Somerfield</title>
-    <link>http://localhost:1313/</link>
+    <link>http://www.richsomerfield.com/</link>
     <description>Recent content on Rich Somerfield</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
@@ -10,24 +10,14 @@
     <webMaster>rs@richsomerfield.com (Rich Somerfield)</webMaster>
     <copyright>Copyright (c) 2010-2015, Rich Somerfield; all rights reserved.</copyright>
     <lastBuildDate>Tue, 24 Mar 2015 16:21:36 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Tue, 24 Mar 2015 16:21:36 +0000</pubDate>
-      <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Live/Work near Manchester, UK.&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="http://www.richsomerfield.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Apps</title>
-      <link>http://localhost:1313/apps/</link>
+      <link>http://www.richsomerfield.com/apps/</link>
       <pubDate>Tue, 24 Mar 2015 16:21:36 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/apps/</guid>
+      <guid>http://www.richsomerfield.com/apps/</guid>
       <description>
 
 &lt;h1 id=&#34;textbar-mac-app:c6a4be2f6b503cc5d5e20765edc3f3ee&#34;&gt;TextBar - Mac App&lt;/h1&gt;
@@ -96,11 +86,21 @@
     </item>
     
     <item>
+      <title>About</title>
+      <link>http://www.richsomerfield.com/about/</link>
+      <pubDate>Tue, 24 Mar 2015 16:21:36 +0000</pubDate>
+      <author>rs@richsomerfield.com (Rich Somerfield)</author>
+      <guid>http://www.richsomerfield.com/about/</guid>
+      <description>&lt;p&gt;Live/Work near Manchester, UK.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>WWDC Speculation - 2014</title>
-      <link>http://localhost:1313/post/2014-05-30-wwdc-speculation-2014/</link>
+      <link>http://www.richsomerfield.com/post/2014-05-30-wwdc-speculation-2014/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2014-05-30-wwdc-speculation-2014/</guid>
+      <guid>http://www.richsomerfield.com/post/2014-05-30-wwdc-speculation-2014/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -153,10 +153,10 @@ Maybe, just maybe, Apple has all of the pieces already.&lt;/p&gt;
     
     <item>
       <title>mitmproxy - updating</title>
-      <link>http://localhost:1313/post/2014-05-20-mitmproxy-updating/</link>
+      <link>http://www.richsomerfield.com/post/2014-05-20-mitmproxy-updating/</link>
       <pubDate>Tue, 20 May 2014 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2014-05-20-mitmproxy-updating/</guid>
+      <guid>http://www.richsomerfield.com/post/2014-05-20-mitmproxy-updating/</guid>
       <description>&lt;p&gt;After a rather annoying hour, I&amp;rsquo;ve managed to update my copy of mitmproxy to the latest. I&amp;rsquo;d previously used pip to install it, but, that was failing to get the latest version (including concurrent requests).&lt;/p&gt;
 
 &lt;p&gt;In the end, I reverted to the manual approach of:&lt;/p&gt;
@@ -185,10 +185,10 @@ Maybe, just maybe, Apple has all of the pieces already.&lt;/p&gt;
     
     <item>
       <title>Using Splunk to monitor OS X File Access</title>
-      <link>http://localhost:1313/post/2014-04-22-using-splunk-to-monitor-os-x-file-access/</link>
+      <link>http://www.richsomerfield.com/post/2014-04-22-using-splunk-to-monitor-os-x-file-access/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2014-04-22-using-splunk-to-monitor-os-x-file-access/</guid>
+      <guid>http://www.richsomerfield.com/post/2014-04-22-using-splunk-to-monitor-os-x-file-access/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -303,10 +303,10 @@ Splunk is a superb system for quickly and dynamically investigating event data.&
     
     <item>
       <title>RegExp - Doesn&#39;t Start With...</title>
-      <link>http://localhost:1313/post/2014-03-13-regexp-doesnt-start-with/</link>
+      <link>http://www.richsomerfield.com/post/2014-03-13-regexp-doesnt-start-with/</link>
       <pubDate>Thu, 13 Mar 2014 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2014-03-13-regexp-doesnt-start-with/</guid>
+      <guid>http://www.richsomerfield.com/post/2014-03-13-regexp-doesnt-start-with/</guid>
       <description>&lt;p&gt;&lt;em&gt;Hopefully this&amp;rsquo;ll remind me how to do it rather than wasting another 20 mins!&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;To use a regular expression to only match a string, if it in not preceeded by a certain string, you can use a &lt;em&gt;negative lookbehind assertion&lt;/em&gt;.&lt;/p&gt;
@@ -331,10 +331,10 @@ Splunk is a superb system for quickly and dynamically investigating event data.&
     
     <item>
       <title>Adventures in Git - SparseCheckouts</title>
-      <link>http://localhost:1313/post/2014-03-05-adventures-in-git-sparsecheckouts/</link>
+      <link>http://www.richsomerfield.com/post/2014-03-05-adventures-in-git-sparsecheckouts/</link>
       <pubDate>Wed, 05 Mar 2014 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2014-03-05-adventures-in-git-sparsecheckouts/</guid>
+      <guid>http://www.richsomerfield.com/post/2014-03-05-adventures-in-git-sparsecheckouts/</guid>
       <description>
 
 &lt;h2 id=&#34;what-are-sparse-checkouts:4e81f56cf7dc89d4ebe1af91e705b998&#34;&gt;What are Sparse Checkouts?&lt;/h2&gt;
@@ -390,10 +390,10 @@ git config core.sparseCheckout false
     
     <item>
       <title>New Mac App - TextBar</title>
-      <link>http://localhost:1313/post/2014-02-20-new-mac-app-textbar/</link>
+      <link>http://www.richsomerfield.com/post/2014-02-20-new-mac-app-textbar/</link>
       <pubDate>Thu, 20 Feb 2014 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2014-02-20-new-mac-app-textbar/</guid>
+      <guid>http://www.richsomerfield.com/post/2014-02-20-new-mac-app-textbar/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;TextBar is a tiny but powerful app that lets you add any text to your MenuBar.
 {% fancyalbum 100x100^ %}&lt;/p&gt;
@@ -413,10 +413,10 @@ images/photos/TextBar3.png: TextBar for Mac&lt;/p&gt;
     
     <item>
       <title>My Mac and Me - Filing #3</title>
-      <link>http://localhost:1313/post/2012-11-30-my-mac-and-me-filing-3/</link>
+      <link>http://www.richsomerfield.com/post/2012-11-30-my-mac-and-me-filing-3/</link>
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2012-11-30-my-mac-and-me-filing-3/</guid>
+      <guid>http://www.richsomerfield.com/post/2012-11-30-my-mac-and-me-filing-3/</guid>
       <description>
 
 &lt;h3 id=&#34;introduction:31c74cc9b14c1fe5891b72c6b6d2ec17&#34;&gt;Introduction&lt;/h3&gt;
@@ -438,10 +438,10 @@ images/photos/TextBar3.png: TextBar for Mac&lt;/p&gt;
     
     <item>
       <title>My Mac and Me - Filing #2</title>
-      <link>http://localhost:1313/post/2012-10-05-my-mac-and-me-filing-2/</link>
+      <link>http://www.richsomerfield.com/post/2012-10-05-my-mac-and-me-filing-2/</link>
       <pubDate>Mon, 05 Nov 2012 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2012-10-05-my-mac-and-me-filing-2/</guid>
+      <guid>http://www.richsomerfield.com/post/2012-10-05-my-mac-and-me-filing-2/</guid>
       <description>
 
 &lt;h3 id=&#34;introduction:c55806647a163a0aa3017655cc6bc648&#34;&gt;Introduction&lt;/h3&gt;
@@ -551,10 +551,10 @@ images/photos/TextBar3.png: TextBar for Mac&lt;/p&gt;
     
     <item>
       <title>My Mac and Me - Filing #1</title>
-      <link>http://localhost:1313/post/2012-10-04-my-mac-and-me-filing-1/</link>
+      <link>http://www.richsomerfield.com/post/2012-10-04-my-mac-and-me-filing-1/</link>
       <pubDate>Thu, 04 Oct 2012 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2012-10-04-my-mac-and-me-filing-1/</guid>
+      <guid>http://www.richsomerfield.com/post/2012-10-04-my-mac-and-me-filing-1/</guid>
       <description>
 
 &lt;h3 id=&#34;introduction:53e4d5f06b17ff8df822910b455a620d&#34;&gt;Introduction&lt;/h3&gt;
@@ -605,10 +605,10 @@ images/photos/TextBar3.png: TextBar for Mac&lt;/p&gt;
     
     <item>
       <title>Problem with Persisted iOS Simulator Credentials</title>
-      <link>http://localhost:1313/post/2012-08-28-problem-with-persisted-ios-simulator-credentials/</link>
+      <link>http://www.richsomerfield.com/post/2012-08-28-problem-with-persisted-ios-simulator-credentials/</link>
       <pubDate>Tue, 28 Aug 2012 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2012-08-28-problem-with-persisted-ios-simulator-credentials/</guid>
+      <guid>http://www.richsomerfield.com/post/2012-08-28-problem-with-persisted-ios-simulator-credentials/</guid>
       <description>
 
 &lt;p&gt;If, like me, you &lt;em&gt;accidentally&lt;/em&gt; use NSURLCredentialPersistencePermanent, like below, and run it on the iOS Simulator the credentials will be stored permantly - as you might imagine. The problem is that there is no (as far as I could find) obvious way to get rid of those permantly stored credentials.&lt;/p&gt;
@@ -640,10 +640,10 @@ images/photos/TextBar3.png: TextBar for Mac&lt;/p&gt;
     
     <item>
       <title>My Mac and Me</title>
-      <link>http://localhost:1313/post/2012-09-26-my-mac-and-me/</link>
+      <link>http://www.richsomerfield.com/post/2012-09-26-my-mac-and-me/</link>
       <pubDate>Tue, 26 Jun 2012 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2012-09-26-my-mac-and-me/</guid>
+      <guid>http://www.richsomerfield.com/post/2012-09-26-my-mac-and-me/</guid>
       <description>
 
 &lt;h3 id=&#34;introduction:6d76bf82d8d92f1cd036692c448e97ae&#34;&gt;Introduction&lt;/h3&gt;
@@ -688,10 +688,10 @@ images/photos/TextBar3.png: TextBar for Mac&lt;/p&gt;
     
     <item>
       <title>OneNoteJournal - Open Sourced</title>
-      <link>http://localhost:1313/post/2012-05-22-onenotejournal-open-sourced/</link>
+      <link>http://www.richsomerfield.com/post/2012-05-22-onenotejournal-open-sourced/</link>
       <pubDate>Tue, 22 May 2012 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2012-05-22-onenotejournal-open-sourced/</guid>
+      <guid>http://www.richsomerfield.com/post/2012-05-22-onenotejournal-open-sourced/</guid>
       <description>&lt;p&gt;In case someone finds it useful, I&amp;rsquo;ve opened sourced my OneNoteJournal code.  Available here:
 &lt;a href=&#34;https://github.com/richie5um/OneNoteJournal&#34;&gt;https://github.com/richie5um/OneNoteJournal&lt;/a&gt;&lt;/p&gt;
 
@@ -701,10 +701,10 @@ images/photos/TextBar3.png: TextBar for Mac&lt;/p&gt;
     
     <item>
       <title>Top x Coding Issues</title>
-      <link>http://localhost:1313/post/2012-01-19-top-x-coding-issues/</link>
+      <link>http://www.richsomerfield.com/post/2012-01-19-top-x-coding-issues/</link>
       <pubDate>Thu, 19 Jan 2012 00:00:00 +0000</pubDate>
       <author>rs@richsomerfield.com (Rich Somerfield)</author>
-      <guid>http://localhost:1313/post/2012-01-19-top-x-coding-issues/</guid>
+      <guid>http://www.richsomerfield.com/post/2012-01-19-top-x-coding-issues/</guid>
       <description>&lt;p&gt;My experience in Software Engineering has shown me that a certain breed of bugs keeps re-occurring. The following is my list of the biggest (needless) causes of bugs:
 1. Uninitialized variables.
 2. Poorly named variables and functions.
