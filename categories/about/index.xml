@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Rich Somerfield</title>
+    <link>http://www.richsomerfield.com/categories/about/</link>
+    <description>Recent content in About on Rich Somerfield</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 10 May 2017 20:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.richsomerfield.com/categories/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://www.richsomerfield.com/about/</link>
+      <pubDate>Wed, 10 May 2017 20:00:00 +0000</pubDate>
+      
+      <guid>http://www.richsomerfield.com/about/</guid>
+      <description>Hello about</description>
+    </item>
+    
+  </channel>
+</rss>
