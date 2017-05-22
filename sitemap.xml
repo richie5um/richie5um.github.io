@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.richsomerfield.com/blog/2017-05-21-airport-picnic/</loc>
+    <lastmod>2017-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.richsomerfield.com/photos/</loc>
     <lastmod>2017-05-19T20:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.richsomerfield.com/blog/2017-05-18-photos/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -27,7 +37,7 @@
   </url>
   
   <url>
-    <loc>http://www.richsomerfield.com/blog/new-site/</loc>
+    <loc>http://www.richsomerfield.com/blog/2017-05-10-new-site/</loc>
     <lastmod>2017-05-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -57,7 +67,7 @@
   
   <url>
     <loc>http://www.richsomerfield.com/blog/</loc>
-    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,7 +91,7 @@
   
   <url>
     <loc>http://www.richsomerfield.com/</loc>
-    <lastmod>2017-05-14T20:00:00+00:00</lastmod>
+    <lastmod>2017-05-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

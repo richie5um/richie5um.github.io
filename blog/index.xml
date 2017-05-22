@@ -6,17 +6,37 @@
     <description>Recent content in Blogs on Rich Somerfield</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 10 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://www.richsomerfield.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Airport Picnic</title>
+      <link>http://www.richsomerfield.com/blog/2017-05-21-airport-picnic/</link>
+      <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.richsomerfield.com/blog/2017-05-21-airport-picnic/</guid>
+      <description>Took the kids out to Manchester Airport Visitors Park. I expected them to get bored quickly, but, instead, they were still enjoying it 3 hours later.
+My friend came over too. We had fun and got some nice photos.</description>
+    </item>
+    
+    <item>
+      <title>Photos</title>
+      <link>http://www.richsomerfield.com/blog/2017-05-18-photos/</link>
+      <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.richsomerfield.com/blog/2017-05-18-photos/</guid>
+      <description>I been a keen photographer for many years. It started with a film camera, developoing black &amp;amp; white photos in the darkroom. The feeling when you develop your contact prints and then see the full-sized photo emerge from the chemicals; I love that process.
+For over 3 years I took a photo every day and posted it to Blipfoto. They was a massive help in seeing photos, as the pressure of it being daily forces you to look everywhere for a photo.</description>
+    </item>
+    
+    <item>
       <title>Updating a website</title>
-      <link>http://www.richsomerfield.com/blog/new-site/</link>
+      <link>http://www.richsomerfield.com/blog/2017-05-10-new-site/</link>
       <pubDate>Wed, 10 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.richsomerfield.com/blog/new-site/</guid>
+      <guid>http://www.richsomerfield.com/blog/2017-05-10-new-site/</guid>
       <description>Introduction Last time I switch the design of my blog, I switched to Hugo. After a bit of theme customization I had a pretty good working system. However, it didn&amp;rsquo;t take long until I tweaked one of the static generated output files.
 This tweaking continued for the next few years&amp;hellip; until now.
 I&amp;rsquo;ve stuck with Hugo, but have chosen a different theme and made my customizations - mostly to make it work like a fully functioning website (with a blog), and not just a &amp;lsquo;single page site&amp;rsquo;, or a &amp;lsquo;blog with an simple about page&amp;rsquo;.</description>
