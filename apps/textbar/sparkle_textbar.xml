@@ -6,7 +6,7 @@
             <description>Most recent changes with links to updates.</description>
             <language>en</language>
             <item>
-                <title>Version 3.0.369 - (Minor release)</title>
+                <title>Version 3.0.369 - (Major release)</title>
                 <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
                 <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.0.369.zip" sparkle:version="3.0.369" type="application/octet-stream" />
             </item>
