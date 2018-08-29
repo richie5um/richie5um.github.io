@@ -1,0 +1,109 @@
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    function itemClicked(event) {
+      if (!event) {
+        event = window.event;
+      }
+
+      var el = (event.target || event.srcElement);
+
+      console.log(el.id);
+
+      $('#liPiece' + el.id).remove();
+    }
+
+    function previewloaded() {
+      var preview = document.querySelector('#imageMap');
+      generatePieces(preview);
+    }
+
+    function viewFile() {
+      $("#pieces").empty();
+
+      var preview = document.querySelector('#imageMap');
+      var file = document.querySelector('input[type=file]').files[0];
+      var reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+        preview.addEventListener('load', previewloaded)
+        preview.src = reader.result;
+      }, false);
+
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function generatePieces(preview) {
+      var x = preview.width;
+      var y = preview.height;
+
+      for (i = 1; i <= 20; i++) {
+        var w = 100;
+        var h = 100;
+
+        // var a = 1 + (i * 100);
+        // var b = 1 + (i * 100);
+
+        var a = Math.floor(Math.random() * x) + 1;
+        var b = Math.floor(Math.random() * y) + 1;
+
+        var c = a + w;
+        var d = b + h;
+
+        var pieceId = $("#pieces").children().length + 1;
+        var piece = '<li id="liPiece' + pieceId + '"><canvas id="imgPiece' + pieceId + '" width="' + w + '" height="' +
+          h + '"></li>';
+        $("#pieces").append(piece);
+
+        var imgPiece = document.querySelector("#imgPiece" + pieceId);
+        var ctx = imgPiece.getContext("2d");
+        ctx.drawImage(preview, -a, -b);
+
+        var areaCoords = a + ',' + b + ',' + c + ',' + d;
+        var area = '<area id="' + pieceId + '" coords="' + areaCoords + '" shape="rect" onclick="itemClicked(event)">';
+        $("#map").append(area);
+      }
+    }
+  </script>
+
+  <style>
+    #imageMap {
+      border: 1px solid green;
+      position: absolute;
+      top: 40;
+      left: 200px;
+      cursor: pointer;
+    }
+
+    #piecesdiv {
+      position: absolute;
+      top: 40;
+      left: 0;
+      cursor: pointer;
+      width: 200px;
+    }
+
+    canvas {
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="file" onchange="viewFile()">
+  <img src="" id="imageMap" usemap="#image-map">
+  <map id="map" name="image-map">
+  </map>
+  <div id="piecesdiv">
+    <ul id="pieces" style="list-style-type:none">
+    </ul>
+  </div>
+
+</body>
+
+</html>
