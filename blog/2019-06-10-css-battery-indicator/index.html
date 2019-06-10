@@ -7,10 +7,11 @@
     <meta name="author" content="map[]" />
     <meta name="description" content="Apps, Photos and Blog">
     <link rel="shortcut icon" type="image/x-icon" href="http://www.richsomerfield.com/img/favicon.ico">
-    <title>Blogs</title>
+    <title>CSS Battery Indicator</title>
     <meta name="generator" content="Hugo 0.20.7" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="http://www.richsomerfield.com/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.richsomerfield.com/css/main.css" /><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/obsidian.min.css">
+    
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
     
@@ -34,6 +35,7 @@ ga('send', 'pageview');
 
   <body>
     <div id="wrap">
+
       
       <nav class="navbar navbar-default">
   <div class="container">
@@ -59,70 +61,80 @@ ga('send', 'pageview');
 </nav>
 
       
-      
-
       <div class="container">
-        <h1>Blog</h1>
-          <div class="panel panel-default">
-            <div class="panel-body">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="http://www.richsomerfield.com/blog/2019-06-10-css-battery-indicator/">CSS Battery Indicator</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          June 10, 2019
+            &nbsp;&nbsp;
             
-              <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <h5 style="text-align: right">
-                    June 10, 2019
-                  </h5>
-                 </div>
-                 <div class="col-sm-8 col-md-8 col-lg-8">
-                   <h5 style="text-align: left">
-                    <strong><a href="/blog/2019-06-10-css-battery-indicator/">CSS Battery Indicator</a></strong>
-                  </h5>
-                </div>
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              <p>Created a simple CSS battery indicator today, thought I&rsquo;d share it with you all.</p>
+
+<p><img src="css-battery-indicator.png" alt="BatteryLevel" /></p>
+
+<pre><code class="language-html">&lt;div class=&quot;batteryContainer&quot;&gt;
+  &lt;div class=&quot;batteryOuter&quot;&gt;&lt;div id=&quot;batteryLevel&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;batteryBump&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">.batteryContainer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.batteryOuter {
+  border-radius: 3px;
+  border: 1px solid #444;
+  padding: 1px;
+  width: 25px;
+  height: 9px;
+}
+
+.batteryBump {
+  border-radius: 2px;
+  background-color: #444;
+  margin: 2px;
+  width: 1px;
+  height: 3px;
+}
+
+#batteryLevel {
+  border-radius: 2px;
+  background-color: #73AD21;
+  width: 18px;
+  height: 9px;
+}
+</code></pre>
+
+<p><a href="https://jsfiddle.net/richie5um/g8hLp5fn/">JSFiddle</a></p>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
               </div>
-            
-              <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <h5 style="text-align: right">
-                    May 21, 2017
-                  </h5>
-                 </div>
-                 <div class="col-sm-8 col-md-8 col-lg-8">
-                   <h5 style="text-align: left">
-                    <strong><a href="/blog/2017-05-21-airport-picnic/">Airport Picnic</a></strong>
-                  </h5>
-                </div>
-              </div>
-            
-              <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <h5 style="text-align: right">
-                    May 18, 2017
-                  </h5>
-                 </div>
-                 <div class="col-sm-8 col-md-8 col-lg-8">
-                   <h5 style="text-align: left">
-                    <strong><a href="/blog/2017-05-18-photos/">Photos</a></strong>
-                  </h5>
-                </div>
-              </div>
-            
-              <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <h5 style="text-align: right">
-                    May 10, 2017
-                  </h5>
-                 </div>
-                 <div class="col-sm-8 col-md-8 col-lg-8">
-                   <h5 style="text-align: left">
-                    <strong><a href="/blog/2017-05-10-new-site/">Updating a website</a></strong>
-                  </h5>
-                </div>
-              </div>
-            
             </div>
           </div>
+        </div>
       </div>
       
     </div>
+
     
     <footer>
   <div id="footer">
@@ -141,7 +153,11 @@ ga('send', 'pageview');
 <script src="http://www.richsomerfield.com/js/docs.min.js"></script>
 <script src="http://www.richsomerfield.com/js/main.js"></script>
 
-<script src="http://www.richsomerfield.com/js/ie10-viewport-bug-workaround.js"></script>
+<script src="http://www.richsomerfield.com/js/ie10-viewport-bug-workaround.js"></script><!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
 
 
   </body>

@@ -6,10 +6,20 @@
     <description>Recent content in Blogs on Rich Somerfield</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 21 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://www.richsomerfield.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS Battery Indicator</title>
+      <link>http://www.richsomerfield.com/blog/2019-06-10-css-battery-indicator/</link>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.richsomerfield.com/blog/2019-06-10-css-battery-indicator/</guid>
+      <description>Created a simple CSS battery indicator today, thought I&amp;rsquo;d share it with you all.
+&amp;lt;div class=&amp;quot;batteryContainer&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;batteryOuter&amp;quot;&amp;gt;&amp;lt;div id=&amp;quot;batteryLevel&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;batteryBump&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  .batteryContainer { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-direction: row; align-items: center; } .batteryOuter { border-radius: 3px; border: 1px solid #444; padding: 1px; width: 25px; height: 9px; } .batteryBump { border-radius: 2px; background-color: #444; margin: 2px; width: 1px; height: 3px; } #batteryLevel { border-radius: 2px; background-color: #73AD21; width: 18px; height: 9px; }  JSFiddle</description>
+    </item>
     
     <item>
       <title>Airport Picnic</title>
