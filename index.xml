@@ -6,10 +6,20 @@
     <description>Recent content on Rich Somerfield</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 10 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 09:21:38 +0100</lastBuildDate>
     
 	<atom:link href="http://www.richsomerfield.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VSCode JSON Status Path - Updated</title>
+      <link>http://www.richsomerfield.com/blog/2019-07-01-vscode-json-status/</link>
+      <pubDate>Mon, 01 Jul 2019 09:21:38 +0100</pubDate>
+      
+      <guid>http://www.richsomerfield.com/blog/2019-07-01-vscode-json-status/</guid>
+      <description>Updated the JSON Status Path extension for VSCode. Thanks to Outrigger047 for the PR.
+Here: JSON Status Path</description>
+    </item>
     
     <item>
       <title>CSS Battery Indicator</title>

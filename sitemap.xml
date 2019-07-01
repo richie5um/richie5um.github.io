@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.richsomerfield.com/blog/2019-07-01-vscode-json-status/</loc>
+    <lastmod>2019-07-01T09:21:38+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.richsomerfield.com/blog/2019-06-10-css-battery-indicator/</loc>
     <lastmod>2019-06-10T00:00:00+00:00</lastmod>
   </url>
@@ -77,7 +82,7 @@
   
   <url>
     <loc>http://www.richsomerfield.com/blog/</loc>
-    <lastmod>2019-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-01T09:21:38+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -101,7 +106,7 @@
   
   <url>
     <loc>http://www.richsomerfield.com/</loc>
-    <lastmod>2019-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-01T09:21:38+01:00</lastmod>
     <priority>0</priority>
   </url>
   
