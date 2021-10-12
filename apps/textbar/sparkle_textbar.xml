@@ -1,224 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
-        <channel>
-            <title>TextBar Changelog</title>
-            <link>https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/sparkle_textbar.xml</link>
-            <description>Most recent changes with links to updates.</description>
-            <language>en</language>
-            <item>
-                <title>Version 3.2.182 - (Notarized)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.182.zip" sparkle:version="3.2.182" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 3.2.96 - (Bug fix)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.96.zip" sparkle:version="3.2.96" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 3.2.36 - (Bug fix)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.36.zip" sparkle:version="3.2.36" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 3.2.20 - (Minor release)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.20.zip" sparkle:version="3.2.20" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 3.2.2 - (Minor release)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.2.zip" sparkle:version="3.2.2" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 3.1.6 - (Minor release)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.1.6.zip" sparkle:version="3.1.6" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 3.0.369 - (Major release)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.0.369.zip" sparkle:version="3.0.369" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 2.0.523 - (Minor release)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.523.zip" sparkle:version="2.0.523" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 2.0.520 - (Minor release)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.520.zip" sparkle:version="2.0.520" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 2.0.517 - (Minor release)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.517.zip" sparkle:version="2.0.517" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 2.0.482 - (Bug fix)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.482.zip" sparkle:version="2.0.482" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 2.0.445 - (Bug fix)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.445.zip" sparkle:version="2.0.445" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 2.0.431 - (Bug fix)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.431.zip" sparkle:version="2.0.431" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 2.0.361 - (Bug fix)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.361.zip" sparkle:version="2.0.361" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 2.0.360 - (Major release)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.360.zip" sparkle:version="2.0.360" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.10.94 - (Bug fixes)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.94.zip" sparkle:version="1.10.94" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.10.87 - (Bug fixes)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.87.zip" sparkle:version="1.10.87" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.10.19 - (Features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.19.zip" sparkle:version="1.10.19" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.10.1 - (Features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.1.zip" sparkle:version="1.10.1" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.9.6 - (Features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.9.6.zip" sparkle:version="1.9.6" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.7.95 - (Features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.7.95.zip" sparkle:version="1.7.95" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.7.25 - (Bug fix)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.7.25.zip" sparkle:version="1.7.25" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.7.19 - (Features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.7.19.zip" sparkle:version="1.7.19" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.7.15 - (Features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.7.15.zip" sparkle:version="1.7.15" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.6.19 - (Features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.6.19.zip" sparkle:version="1.6.19" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.6.1 - (Features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.6.1.zip" sparkle:version="1.6.1" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.5.210 - (Bug fix)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.5.210.zip" sparkle:version="1.5.210" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.5.203 - (New icon)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.5.203.zip" sparkle:version="1.5.203" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.5.184 - (Bug fix)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.5.184.zip" sparkle:version="1.5.184" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.5.174 - (Multiple new features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.5.174.zip" sparkle:version="1.5.174" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.4.53 - (New feature)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.4.53.zip" sparkle:version="1.4.53" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.4.9 - (New feature)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.4.9.zip" sparkle:version="1.4.9" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.3.33 - (Bug fixes)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.3.33.zip" sparkle:version="1.3.33" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.3.3 - (1 new feature)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.3.3.zip" sparkle:version="1.3.3" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.2.165 - (Bug fixes)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.2.165.zip" sparkle:version="1.2.165" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.2.140 - (Huge new update)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.2.140.zip" sparkle:version="1.2.140" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.1.344 - (1 new features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.344.zip" sparkle:version="1.1.344" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.1.340 - (1 new features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.340.zip" sparkle:version="1.1.340" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.1.335 - (2 new features)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.335.zip" sparkle:version="1.1.335" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.1.240 - (1 bug fixed)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.240.zip" sparkle:version="1.1.240" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.1.238 - (1 bug fixed)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.238.zip" sparkle:version="1.1.238" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.1.210 - (1 bug fixed)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.210.zip" sparkle:version="1.1.210" type="application/octet-stream" />
-            </item>
-            <item>
-                <title>Version 1.1.209 - (First official version)</title>
-                <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-                <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.209.zip" sparkle:version="1.1.209" type="application/octet-stream" />
-            </item>
-        </channel>
-    </rss>
+<rss version="2.0"
+    xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>TextBar Changelog</title>
+        <link>https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/sparkle_textbar.xml</link>
+        <description>Most recent changes with links to updates.</description>
+        <language>en</language>
+        <item>
+            <title>Version 3.5.1 - (Notarized)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.5.1.zip" sparkle:version="3.5..1" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 3.2.182 - (Notarized)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.182.zip" sparkle:version="3.2.182" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 3.2.96 - (Bug fix)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.96.zip" sparkle:version="3.2.96" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 3.2.36 - (Bug fix)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.36.zip" sparkle:version="3.2.36" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 3.2.20 - (Minor release)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.20.zip" sparkle:version="3.2.20" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 3.2.2 - (Minor release)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.2.2.zip" sparkle:version="3.2.2" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 3.1.6 - (Minor release)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.1.6.zip" sparkle:version="3.1.6" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 3.0.369 - (Major release)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.0.369.zip" sparkle:version="3.0.369" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.0.523 - (Minor release)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.523.zip" sparkle:version="2.0.523" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.0.520 - (Minor release)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.520.zip" sparkle:version="2.0.520" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.0.517 - (Minor release)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.517.zip" sparkle:version="2.0.517" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.0.482 - (Bug fix)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.482.zip" sparkle:version="2.0.482" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.0.445 - (Bug fix)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.445.zip" sparkle:version="2.0.445" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.0.431 - (Bug fix)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.431.zip" sparkle:version="2.0.431" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.0.361 - (Bug fix)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.361.zip" sparkle:version="2.0.361" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 2.0.360 - (Major release)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-2.0.360.zip" sparkle:version="2.0.360" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.10.94 - (Bug fixes)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.94.zip" sparkle:version="1.10.94" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.10.87 - (Bug fixes)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.87.zip" sparkle:version="1.10.87" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.10.19 - (Features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.19.zip" sparkle:version="1.10.19" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.10.1 - (Features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.10.1.zip" sparkle:version="1.10.1" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.9.6 - (Features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.9.6.zip" sparkle:version="1.9.6" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.95 - (Features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.7.95.zip" sparkle:version="1.7.95" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.25 - (Bug fix)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.7.25.zip" sparkle:version="1.7.25" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.19 - (Features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.7.19.zip" sparkle:version="1.7.19" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.7.15 - (Features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.7.15.zip" sparkle:version="1.7.15" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.6.19 - (Features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.6.19.zip" sparkle:version="1.6.19" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.6.1 - (Features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.6.1.zip" sparkle:version="1.6.1" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.5.210 - (Bug fix)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.5.210.zip" sparkle:version="1.5.210" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.5.203 - (New icon)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.5.203.zip" sparkle:version="1.5.203" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.5.184 - (Bug fix)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.5.184.zip" sparkle:version="1.5.184" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.5.174 - (Multiple new features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.5.174.zip" sparkle:version="1.5.174" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.4.53 - (New feature)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.4.53.zip" sparkle:version="1.4.53" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.4.9 - (New feature)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.4.9.zip" sparkle:version="1.4.9" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.3.33 - (Bug fixes)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.3.33.zip" sparkle:version="1.3.33" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.3.3 - (1 new feature)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.3.3.zip" sparkle:version="1.3.3" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.2.165 - (Bug fixes)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.2.165.zip" sparkle:version="1.2.165" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.2.140 - (Huge new update)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.2.140.zip" sparkle:version="1.2.140" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.344 - (1 new features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.344.zip" sparkle:version="1.1.344" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.340 - (1 new features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.340.zip" sparkle:version="1.1.340" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.335 - (2 new features)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.335.zip" sparkle:version="1.1.335" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.240 - (1 bug fixed)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.240.zip" sparkle:version="1.1.240" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.238 - (1 bug fixed)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.238.zip" sparkle:version="1.1.238" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.210 - (1 bug fixed)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.210.zip" sparkle:version="1.1.210" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.209 - (First official version)</title>
+            <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-1.1.209.zip" sparkle:version="1.1.209" type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
