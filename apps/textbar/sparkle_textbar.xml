@@ -10,7 +10,7 @@
         <item>
             <title>Version 3.5.1 - (Notarized)</title>
             <sparkle:releaseNotesLink>http://www.richsomerfield.com/apps/textbar/releasenotes_textbar.html</sparkle:releaseNotesLink>
-            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.5.1.zip" sparkle:version="3.5..1" type="application/octet-stream" />
+            <enclosure url="https://raw.githubusercontent.com/richie5um/richie5um.github.io/master/apps/textbar/TextBar.app-3.5.1.zip" sparkle:version="3.5.1" type="application/octet-stream" />
         </item>
         <item>
             <title>Version 3.2.182 - (Notarized)</title>
