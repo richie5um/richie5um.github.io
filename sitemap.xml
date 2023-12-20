@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.richsomerfield.com/blog/</loc>
+    <lastmod>2019-07-01T09:21:38+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.richsomerfield.com/</loc>
+    <lastmod>2019-07-01T09:21:38+01:00</lastmod>
+    <priority>0</priority>
+  </url>
   
   <url>
     <loc>http://www.richsomerfield.com/blog/2019-07-01-vscode-json-status/</loc>
@@ -12,8 +25,32 @@
   </url>
   
   <url>
+    <loc>http://www.richsomerfield.com/categories/</loc>
+    <lastmod>2017-11-09T10:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.richsomerfield.com/tags/</loc>
+    <lastmod>2017-11-09T10:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.richsomerfield.com/apps/textbar-bitcoin/</loc>
     <lastmod>2017-11-09T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.richsomerfield.com/categories/apps/</loc>
+    <lastmod>2017-11-09T10:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.richsomerfield.com/tags/apps/</loc>
+    <lastmod>2017-11-09T10:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -32,6 +69,18 @@
   </url>
   
   <url>
+    <loc>http://www.richsomerfield.com/categories/photos/</loc>
+    <lastmod>2017-05-19T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.richsomerfield.com/tags/photos/</loc>
+    <lastmod>2017-05-19T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.richsomerfield.com/blog/2017-05-18-photos/</loc>
     <lastmod>2017-05-18T00:00:00+00:00</lastmod>
   </url>
@@ -39,6 +88,18 @@
   <url>
     <loc>http://www.richsomerfield.com/about/</loc>
     <lastmod>2017-05-14T20:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.richsomerfield.com/categories/about/</loc>
+    <lastmod>2017-05-14T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.richsomerfield.com/tags/about/</loc>
+    <lastmod>2017-05-14T20:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -54,66 +115,6 @@
   <url>
     <loc>http://www.richsomerfield.com/blog/2017-05-10-new-site/</loc>
     <lastmod>2017-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/tags/about/</loc>
-    <lastmod>2017-05-14T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/categories/about/</loc>
-    <lastmod>2017-05-14T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/tags/apps/</loc>
-    <lastmod>2017-11-09T10:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/categories/apps/</loc>
-    <lastmod>2017-11-09T10:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/blog/</loc>
-    <lastmod>2019-07-01T09:21:38+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/categories/</loc>
-    <lastmod>2017-05-14T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/tags/photos/</loc>
-    <lastmod>2017-05-19T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/categories/photos/</loc>
-    <lastmod>2017-05-19T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/</loc>
-    <lastmod>2019-07-01T09:21:38+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.richsomerfield.com/tags/</loc>
-    <lastmod>2017-05-14T20:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
